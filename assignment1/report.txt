@@ -1,0 +1,88 @@
+==================================== How the server is configured ====================================
+My server is based off of the one used in lab for demonstration purposes. It consists of a main driver that does the following things in order:
+
+- Establish the current directory, and the path to it
+- Create a directory for the key-value storage
+- Define it's address and port (Local Host:9889)
+- Bind to a socket and wait for TCP transmissions
+
+When it receives a TCP connection, it accepts the connection, displays the address connected from, and begin 
+processing the data that was transmitted in the request. When it receives the request it expects the request to be in the pattern shown on the assignment page:
+
+GET-
+get <key>\r\n
+
+SET- 
+set <key> <value bytes>\r\n
+<value>\r\n
+
+To differentiate between the two, I first do simple string manipulation and create an array out of the lines in the data:
+
+GET- 
+[[get <key>]]
+
+SET- 
+[[set <key> <value bytes>], [<value>]]
+
+With these lines separated I am now able to separate by spaces on line 1 resulting in:
+
+GET- 
+[[[get], [<key>]]]
+
+SET- 
+[ [ [set], [<key>], [<value bytes>] ], [<value>] ]
+
+This structure allows me to decide which command is being used with a simple match case. The match case is set to match on "set", "get", or neither.
+Upon seeing neither, it will send a response error message stating "Invalid Command\r\n". If it is a get or a set command though, it will then process further.
+It it is a "get" command, it will simply call the get command, which goes into the predefined file system to look for a file by the name of the given key, 
+then it returns that key-value pair in the requested format. The following is a list of errors that can cause for the incorrect/no value to be returned:
+
+1. Key does not exist
+2. Key was greater than 260 bytes, causing windows to truncate the name
+3. You attempted to overwrite the value associated with a key - this will not work, as overwriting is not supported 
+
+If the command is "set", it parses the second line of the sent data, and creates a file with the given key as the name and the given value as the data inside.
+After this, it sends the driver a status code to return stating whether or not the data had been stored or not. The following cases are where 
+the data is not stored:
+
+1. Key already exists in the system
+2. An issue with creating the file not related to the naming of the file (Directory is inaccessible, incorrect permissions)
+3. Key > 260 characters
+4. Key has unsupported characters - whitespace/special characters
+
+Other Errors Handled:
+
+1. Incorrect command structure
+2. Incorrect command
+
+============================================= Testing ================================================
+
+Testing can be done inside of the client.py file, running this file creates a random amount of key-value pairs, 
+each pair will request the server with a set command then a get command. The amount of randomness can be adjusted based on the range of numbers being used
+for example: you can modify the length of the key/value by changing the random.randomint() function to have a smaller range.
+This will lead to more chances for collisions or have more requests go through. Every command is timed and logged, 
+the correctness of the storage system is also tested everytime the get-set commands are used, it tests that the values/bytes were not changed, 
+to be sure that this was not due to the key already being recorded, it logs if the key-value pair was stored to begin with, 
+so you can know if you are getting expected failure or not.
+There are several tests in this python file that also test for common errors like:
+- Key length
+- Unsupported Characters
+
+============================================= Limitations =============================================
+
+- Key size is limited by windows to 260 characters/bits
+- Value size is limited to the amount of bytes left over from the transmission of the other data in the command and the server set limit for receiving
+for my server the limit is 1024 bytes, not counting the entire command length this can be changed though
+- Currently it can only handle one connection concurrently (This is bonus for 434 students)
+
+============================================= Additional ==============================================
+
+Logging is done by the client- logs for runs that complete can be found in the client folder. They are outputted as a CSV file with the following structure:
+
+"Key", "Value", "Bytes", "Stored?", "Time to store", "Retrieved Value", "Retrieved Bytes", "Time to get", "Correct Key-Value?"
+..., ..., ..., ..., ..., ..., ..., ..., ...
+
+============================================= Future Improvements ==============================================
+
+- Concurrency 
+- Bigger packet transfer

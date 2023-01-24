@@ -1,0 +1,4 @@
+Can values be reset for keys?
+What file type should the key-values be when stored, if any? 
+Why is bytes transmitted?
+When sending data larger than the permitted bytes size, is it possible to segment the data into separate packets, then reconstruct them server-side?
