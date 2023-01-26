@@ -1,0 +1,31 @@
+Key,Value,Bytes,Stored?,Time to store,Retrieved Value,Retrieved Bytes,Time to get,Correct Key-Value?
+test#1,This test should fail due to the special character in the name,62,"NOT STORED
+",17.17864751815796,END ,FOUND,0.7139737606048584,False
+test 2,This test should fail due to the space in the name,50,"Unable to process command 
+",0.0,An error occurred when parsing server return,process,0.0,False
+test3 ,This test should fail due to the space in the name,50,"Unable to process command 
+",0.0,An error occurred when parsing server return,process,0.0,False
+longtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtest,This test should fail due to the length of the string,53,"NOT STORED
+",0.8577237129211426,END ,FOUND,0.4298577308654785,False
+how05,monitor credit 3 5 ,19,"STORED
+",0.12493896484375,monitor credit 3 5 ,19,0.38138818740844727,True
+9shape3,7 birth 7 4 8 4 gaming keyboard messy how 0 voyage 5 ,53,"STORED
+",0.35660457611083984,7 birth 7 4 8 4 gaming keyboard messy how 0 voyage 5 ,53,0.11787104606628418,True
+whispermonitorgaming,let monitor exuberant monitor birth credit 6 2 voyage ,54,"STORED
+",0.3099672794342041,let monitor exuberant monitor birth credit 6 2 voyage ,54,0.7053992748260498,True
+monitor,build present you imprint 3 crowded 1 ,38,"STORED
+",0.6565897464752197,build present you imprint 3 crowded 1 ,38,0.27348756790161133,True
+22,crowded ,8,"STORED
+",0.40979838371276855,crowded ,8,0.04696345329284668,True
+7jelly,network 4 suit limping force keyboard evaporate voyage evaporate space ,71,"STORED
+",0.2100663185119629,network 4 suit limping force keyboard evaporate voyage evaporate space ,71,0.20447635650634766,True
+7youhow,force willing zipper 9 program ,31,"STORED
+",0.7349495887756348,force willing zipper 9 program ,31,0.015628337860107422,True
+willingzipper,keyboard 6 present messy world 9 let shape 8 limping 3 present 9 suit ,70,"STORED
+",0.8887889385223389,keyboard 6 present messy world 9 let shape 8 limping 3 present 9 suit ,70,0.3258860111236572,True
+space8voyage,program ,8,"STORED
+",0.08522295951843262,program ,8,0.8219125270843506,True
+8let,application shape willing build world javascript messy voyage voyage program how 0 8 ,85,"STORED
+",0.510746955871582,application shape willing build world javascript messy voyage voyage program how 0 8 ,85,0.566063642501831,True
+are,javascript program imprint space force 7 world network 0 exuberant 0 jelly 8 world space ,89,"STORED
+",0.6471340656280518,javascript program imprint space force 7 world network 0 exuberant 0 jelly 8 world space ,89,0.48470306396484375,True

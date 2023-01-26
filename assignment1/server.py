@@ -25,7 +25,6 @@ def set(key: str, val: str, bytes: str):
         return "NOT STORED\r\n"
     # Making the key-value pair
     try:
-        open(NEW_DIR+'/'+key, 'x')
         file = open(NEW_DIR+'/'+key, 'w')
         file.write(val)
         file.close()
@@ -66,38 +65,41 @@ if __name__ == '__main__':
     while True:
         conn, addr = s.accept()
         print(f"Connected by {addr}")
-        # Receive data from Client
-        data = conn.recv(1024)
-        # Parsing the recieved data, splitting first by the lines, then splitting the first line to find the command that was used
-        parsedData = data.decode()
-        linedData = parsedData.splitlines()
-        # A get or set command should consist of 2 lines at most, otherwise there are invalid newlines 
-        if len(linedData) < 3:
-            # Line 1 contains the command
-            line1 = linedData[0].split(' ')
-            if len(line1) < 4:
-                # Finding the correct command
-                match line1[0]:
-                    # Set command requires parsing the second line to get the value of the key 
-                    case 'set':
-                        try:
-                            status = set(line1[1], linedData[1], line1[2])         
-                            conn.sendall(f"{status}".encode())
-                        except IndexError:
-                            conn.sendall("Unable to create file, invalid command structure, or loss of data due to packet size\r\n".encode())
-                    # Get command requires no further parsing, just finding the file if it exists
-                    case 'get':
-                        try:
-                            status = get(line1[1], line1[2])
-                            # Sending the value back, and the end status message
-                            conn.sendall(f"{status}END \r\n".encode())
-                        except IndexError:
-                            conn.sendall("Unable to read from file, invalid command structure, or loss of data due to packet size\r\n".encode())
-                    case _:
-                        # command does not exist 
-                        conn.sendall(f"INVALID COMMAND \r\n".encode())
+        while True:
+            # Receive data from Client
+            data = conn.recv(1024)
+            if not data:
+                break
+            # Parsing the recieved data, splitting first by the lines, then splitting the first line to find the command that was used
+            parsedData = data.decode()
+            linedData = parsedData.splitlines()
+            # A get or set command should consist of 2 lines at most, otherwise there are invalid newlines 
+            if len(linedData) < 3:
+                # Line 1 contains the command
+                line1 = linedData[0].split(' ')
+                if len(line1) < 4:
+                    # Finding the correct command
+                    match line1[0]:
+                        # Set command requires parsing the second line to get the value of the key 
+                        case 'set':
+                            try:
+                                status = set(line1[1], linedData[1], line1[2])         
+                                conn.sendall(f"{status}".encode())
+                            except IndexError:
+                                conn.sendall("Unable to create file, invalid command structure, or loss of data due to packet size\r\n".encode())
+                        # Get command requires no further parsing, just finding the file if it exists
+                        case 'get':
+                            try:
+                                status = get(line1[1], line1[2])
+                                # Sending the value back, and the end status message
+                                conn.sendall(f"{status}END \r\n".encode())
+                            except IndexError:
+                                conn.sendall("Unable to read from file, invalid command structure, or loss of data due to packet size\r\n".encode())
+                        case _:
+                            # command does not exist 
+                            conn.sendall(f"INVALID COMMAND \r\n".encode())
+                else:
+                    conn.sendall(f"Unable to process command \r\n".encode())
             else:
                 conn.sendall(f"Unable to process command \r\n".encode())
-        else:
-            conn.sendall(f"Unable to process command \r\n".encode())
         

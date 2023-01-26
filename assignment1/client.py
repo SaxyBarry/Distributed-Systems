@@ -34,7 +34,7 @@ def send_messages():
     keyVals[longString] = "This test should fail due to the length of the string"
     
     # How many key-value pairs we have & set/gets will be made
-    keyValCount = random.randint(1, 2) + 4
+    keyValCount = random.randint(1, 15) + 4
     # Populating dictionary with keys and values, keys are composed of 1-3 words from above, values are composed of 1-10 words from above 
     for x in range(0, keyValCount):
         key = ""
@@ -50,26 +50,21 @@ def send_messages():
     for x in range(0, keyValCount):
         # Printing and storing the test key-values and bytes
         results.append([list(keyVals.keys())[x], keyVals[list(keyVals.keys())[x]], len(keyVals[list(keyVals.keys())[x]])])
-        print(f"{list(keyVals.keys())[x]} : {keyVals[list(keyVals.keys())[x]]}")
         
     # Creating and sending the set commands for the key-values
     for x in range(0, keyValCount):
-        s = socket.socket()
-        s.connect((HOST, PORT))
         message = f"set {list(keyVals.keys())[x]} {len(keyVals[list(keyVals.keys())[x]])}\r\n{keyVals[list(keyVals.keys())[x]]}\r\n"
         start = time.time()
         s.sendall(message.encode())
+        print("Message Sent")
         data = s.recv(1024)
         end = time.time()
         print(f"{data.decode()}")
         # Storing if the key-value was stored and how long it took 
         results[x+1].extend([data.decode(), end - start])
-        s.close()
         
     # Creating and sending the get commands for the key-values
     for x in range(0, keyValCount):
-        s = socket.socket()
-        s.connect((HOST, PORT))
         message = f"get {list(keyVals.keys())[x]} \r\n"
         start = time.time()
         s.sendall(message.encode())
@@ -83,18 +78,12 @@ def send_messages():
         except:
             line2 = "An error occurred when parsing server return"
         # Storing the resulting return values from the store, how long the action took, and if the result and original values matched
-        arr = [line2, line1[2], end - start, line2 == keyVals[list(keyVals.keys())[x]]]
+        try:
+            arr = [line2, line1[2], end - start, line2 == keyVals[list(keyVals.keys())[x]]]
+        except:
+            arr = [line2, "Error has Occurred", end - start, line2 == keyVals[list(keyVals.keys())[x]]]
         results[x+1].extend(arr)
-        s.close()
-    
-    # Code to store the resulting logs in a CSV file
-    uni = time.time()
-    open(NEW_DIR+'/log'+str(uni)+'.csv', 'x')
-    file = open(NEW_DIR+'/log'+str(uni)+'.csv', 'w')
-    writer = csv.writer(file, delimiter=',')
-    for x in results:
-        writer.writerow(x)
-    file.close()
+    return results
 
 
 if __name__ == '__main__':
@@ -104,4 +93,16 @@ if __name__ == '__main__':
     establishStorage()
     HOST = "127.0.0.1"
     PORT = 9889
-    send_messages()
+    s = socket.socket()
+    s.connect((HOST, PORT))
+    results = send_messages()
+    s.close()
+    
+    # Code to store the resulting logs in a CSV file
+    uni = time.time()
+    open(NEW_DIR+'/log'+str(uni)+'.csv', 'x')
+    file = open(NEW_DIR+'/log'+str(uni)+'.csv', 'w')
+    writer = csv.writer(file, delimiter=',')
+    for x in results:
+        writer.writerow(x)
+    file.close()
