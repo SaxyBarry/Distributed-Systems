@@ -1,0 +1,11 @@
+Key,Value,Bytes,Stored?,Time to store,Retrieved Value,Retrieved Bytes,Time to get,Correct Key-Value?
+test#1,This test should fail due to the special character in the name,62,"NOT STORED
+",0.9128353595733643,END ,FOUND,0.6847012042999268,False
+test 2,This test should fail due to the space in the name,50,"Unable to process command 
+",0.0003790855407714844,An error occurred when parsing server return,process,0.0,False
+test3 ,This test should fail due to the space in the name,50,"Unable to process command 
+",0.0004987716674804688,An error occurred when parsing server return,process,0.0,False
+longtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtest,This test should fail due to the length of the string,53,"NOT STORED
+",0.5388615131378174,END ,FOUND,0.6374547481536865,False
+letcredit,3 present zipper 6 ,19,"STORED
+",0.7730274200439453,3 present zipper 6 ,19,0.08735537528991699,True

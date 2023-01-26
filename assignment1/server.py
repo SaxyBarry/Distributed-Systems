@@ -49,11 +49,7 @@ def get(key: str, bytes: str):
     except:
         return "KEY NOT FOUND\r\n"
     
-def handleConnection(conn):
-    # Receive data from Client
-    data = conn.recv(1024)
-    # Parsing the recieved data, splitting first by the lines, then splitting the first line to find the command that was used
-    parsedData = data.decode()
+def handleRequest(parsedData):
     linedData = parsedData.splitlines()
     # A get or set command should consist of 2 lines at most, otherwise there are invalid newlines 
     if len(linedData) < 3:
@@ -84,6 +80,23 @@ def handleConnection(conn):
             conn.sendall(f"Unable to process command \r\n".encode())
     else:
         conn.sendall(f"Unable to process command \r\n".encode())
+    
+def handleConnection(conn):
+    # threads = []
+    print(conn)
+    while True:
+        data = conn.recv(1024)
+        if not data:
+            break
+        # Parsing the recieved data, splitting first by the lines, then splitting the first line to find the command that was used
+        parsedData = data.decode()
+        handleRequest(parsedData)
+        # thread = thread(target = handleRequest, args=(parsedData,))
+        # thread.start()
+        # threads.append(thread)
+    # for x in threads:
+    #     x.join()
+        
 
 if __name__ == '__main__':
     # Global variables for accessing the set storage, to be used by establishStorage, get and set commands
@@ -98,12 +111,7 @@ if __name__ == '__main__':
     s = socket.socket()
     s.bind((HOST, PORT))
     s.listen(5)
-    threads = []
     while True:
         conn, addr = s.accept()
-        print(f"Connected by {addr}")
-        client_handler = threading.Thread(target=handleConnection, args=(conn,))
-        client_handler.start()
-
-        
-        
+        x = threading.Thread(target = handleConnection, args = (conn,))
+        x.start()

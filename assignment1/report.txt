@@ -80,7 +80,7 @@ for my server the limit is 1024 bytes, not counting the entire command length th
 Logging is done by the client- logs for runs that complete can be found in the client folder. They are outputted as a CSV file with the following structure:
 
 "Key", "Value", "Bytes", "Stored?", "Time to store", "Retrieved Value", "Retrieved Bytes", "Time to get", "Correct Key-Value?"
-..., ..., ..., ..., ..., ..., ..., ..., ...
+...,    ...,     ...,     ...,         ...,            ...,                ...,               ...,               ...
 
 ============================================= Future Improvements ==============================================
 

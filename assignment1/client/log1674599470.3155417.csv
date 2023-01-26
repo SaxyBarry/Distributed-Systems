@@ -1,0 +1,23 @@
+Key,Value,Bytes,Stored?,Time to store,Retrieved Value,Retrieved Bytes,Time to get,Correct Key-Value?
+test#1,This test should fail due to the special character in the name,62,"NOT STORED
+",0.5170331001281738,END ,FOUND,0.15367889404296875,False
+test 2,This test should fail due to the space in the name,50,"Unable to process command 
+",0.0006046295166015625,An error occurred when parsing server return,process,0.0010311603546142578,False
+test3 ,This test should fail due to the space in the name,50,"Unable to process command 
+",0.0004949569702148438,An error occurred when parsing server return,process,0.0005168914794921875,False
+longtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtestlongtest,This test should fail due to the length of the string,53,"NOT STORED
+",0.3441951274871826,END ,FOUND,0.4844181537628174,False
+gamingpresent5,are space keyboard present network 5 evaporate 5 network ,57,"STORED
+",0.618157148361206,are space keyboard present network 5 evaporate 5 network ,57,0.3636035919189453,True
+crowded,build limping 8 0 willing keyboard whisper ,43,"NOT STORED
+",0.17424535751342773,voyage 1 network ,17,0.8839728832244873,False
+monitor2how,jelly gaming voyage program jelly 8 imprint ,44,"STORED
+",0.5854325294494629,jelly gaming voyage program jelly 8 imprint ,44,0.4681568145751953,True
+space9,1 6 build voyage 9 ,19,"STORED
+",0.24127888679504395,1 6 build voyage 9 ,19,0.1375584602355957,True
+force,space how crowded jelly you 5 how 8 ,36,"NOT STORED
+",0.032260894775390625,keyboard are imprint build 4 1 exuberant ,41,0.16059470176696777,False
+willing7,willing jelly 6 javascript 7 exuberant network voyage 6 6 force ,64,"STORED
+",0.18740200996398926,willing jelly 6 javascript 7 exuberant network voyage 6 6 force ,64,0.2697620391845703,True
+43space,birth let 1 ,12,"STORED
+",0.5660688877105713,birth let 1 ,12,0.7294824123382568,True
