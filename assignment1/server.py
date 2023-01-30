@@ -19,89 +19,95 @@ def set(key: str, val: str, bytes: str):
     # Random Delay
     time.sleep(random.random()) 
     # Checking for valid key: Less than 260 characters, no special characters/whitespace
-    if len(key) >= 260:
-        return "NOT STORED\r\n"
+    if len(key) >= 260: 
+        return "NOT STORED \r\n"
+    if not (len(val) == int(bytes)):
+        return "NOT STORED \r\n"
     pattern = regex.compile("[A-z0-9]+")
     if not bool(pattern.fullmatch(key)):
-        return "NOT STORED\r\n"
+        return "NOT STORED \r\n"
+    lock.acquire()
     # Making the key-value pair
     try:
-        open(NEW_DIR+'/'+key, 'x')
         file = open(NEW_DIR+'/'+key, 'w')
         file.write(val)
         file.close()
-        return "STORED\r\n"
+        lock.release()
+        return "STORED \r\n"
     except:
-        return "NOT STORED\r\n"
-
+        lock.release()
+        return "NOT STORED \r\n"
 
 # Returns the value associated with the given key, or an appropriate status code explaining why no val was returned
 def get(key: str, bytes: str):
     # Random Delay
     time.sleep(random.random())
+    lock.acquire()
     try:
         file = open(NEW_DIR+'/'+key, 'r')
         val = file.read()
-        fileStats = os.stat(NEW_DIR+'/'+key)
         file.close()
+        fileStats = os.stat(NEW_DIR+'/'+key)
         # Returns VALUE KEY BYTES \r\n VALUE\r\n
+        lock.release()
         return f"VALUE {key} {fileStats.st_size} \r\n{val}\r\n"
     except:
-        return "KEY NOT FOUND\r\n"
+        lock.release()
+        return "NOT STORED \r\n"
     
-def handleRequest(parsedData):
+def handleRequest(parsedData, conn):
     linedData = parsedData.splitlines()
     # A get or set command should consist of 2 lines at most, otherwise there are invalid newlines 
-    if len(linedData) < 3:
+    if len(linedData) < 4:
         # Line 1 contains the command
         line1 = linedData[0].split(' ')
-        if len(line1) < 4:
+        if len(line1) < 5:
             # Finding the correct command
             match line1[0]:
                 # Set command requires parsing the second line to get the value of the key 
                 case 'set':
                     try:
-                        status = set(line1[1], linedData[1], line1[2])         
+                        status = set(line1[1], linedData[1], line1[2])  
                         conn.sendall(f"{status}".encode())
                     except IndexError:
-                        conn.sendall("Unable to create file, invalid command structure, or loss of data due to packet size\r\n".encode())
+                        conn.sendall("NOT STORED \r\n".encode())
                 # Get command requires no further parsing, just finding the file if it exists
                 case 'get':
                     try:
                         status = get(line1[1], line1[2])
                         # Sending the value back, and the end status message
-                        conn.sendall(f"{status}END \r\n".encode())
+                        if status == "NOT STORED \r\n":
+                            conn.sendall(status.encode())
+                        else:
+                            conn.sendall(f"{status}END \r\n".encode())
                     except IndexError:
-                        conn.sendall("Unable to read from file, invalid command structure, or loss of data due to packet size\r\n".encode())
+                        conn.sendall("NOT STORED \r\n".encode())
                 case _:
                     # command does not exist 
-                    conn.sendall(f"INVALID COMMAND \r\n".encode())
+                    conn.sendall(f"NOT STORED \r\n".encode())
         else:
-            conn.sendall(f"Unable to process command \r\n".encode())
+            conn.sendall(f"NOT STORED \r\n".encode())
     else:
-        conn.sendall(f"Unable to process command \r\n".encode())
+        conn.sendall(f"NOT STORED \r\n".encode())
     
 def handleConnection(conn):
-    # threads = []
-    print(conn)
     while True:
         data = conn.recv(1024)
         if not data:
             break
         # Parsing the recieved data, splitting first by the lines, then splitting the first line to find the command that was used
         parsedData = data.decode()
-        handleRequest(parsedData)
-        # thread = thread(target = handleRequest, args=(parsedData,))
-        # thread.start()
-        # threads.append(thread)
-    # for x in threads:
-    #     x.join()
+        thread = threading.Thread(target=handleRequest, args=(parsedData,conn,))
+        thread.start()
+        # handleRequest(parsedData, conn)
         
 
 if __name__ == '__main__':
     # Global variables for accessing the set storage, to be used by establishStorage, get and set commands
     SOURCE_DIR = os.path.dirname(os.path.abspath(__file__))
     NEW_DIR = os.path.join(SOURCE_DIR, "server")
+    # Mutex Lock to Prevent multiple thread locks at once
+    lock = threading.Lock()
     # Upon server setup, it must establish a directory for storing the values if one does not exist
     establishStorage()
     # Defining the server address
@@ -110,8 +116,8 @@ if __name__ == '__main__':
     # Bind our server to this address and listening for incoming requests.
     s = socket.socket()
     s.bind((HOST, PORT))
-    s.listen(5)
+    s.listen()
     while True:
         conn, addr = s.accept()
-        x = threading.Thread(target = handleConnection, args = (conn,))
-        x.start()
+        client_thread = threading.Thread(target = handleConnection, args = (conn,))
+        client_thread.start()

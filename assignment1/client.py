@@ -20,21 +20,23 @@ def establishStorage():
 
 def send_messages():
     wordBank = ["hello", 'world', 'how', 'are', 'you', "monitor", "program", "application", "keyboard", 
-                "javascript", "gaming", "network", 'birth','evaporate','let','willing','zipper','voyage',
+                "javascript", "gaming", "network",'evaporate','let','willing','zipper','voyage',
                 'imprint','space','force','credit','present','messy','build','shape','crowded','exuberant',
                 'suit','jelly','limping','whisper','1','2','3','4','5','6','7','8','9','0']
     # Dict of values and keys
     keyVals = {}
     
     # Specific Test Cases to test things that aren't tested with the word bank above
-    keyVals['test#1'] = "This test should fail due to the special character in the name"
-    keyVals['test 2'] = "This test should fail due to the space in the name"
-    keyVals['test3 '] = "This test should fail due to the space in the name"
+    keyVals['test#1'] = "This test should fail due to the special character in the name "
+    keyVals['test 2'] = "This test should fail due to the space in the name "
+    keyVals['test3 '] = "This test should fail due to the space in the name "
+    keyVals['test5'] = f"This test is a duplicate key {random.randint(0,15)} "
     longString = 'longtest'*33
     keyVals[longString] = "This test should fail due to the length of the string"
     
     # How many key-value pairs we have & set/gets will be made
-    keyValCount = random.randint(1, 15) + 4
+    keyValCount = random.randint(1, 15) + 5
+    
     # Populating dictionary with keys and values, keys are composed of 1-3 words from above, values are composed of 1-10 words from above 
     for x in range(0, keyValCount):
         key = ""
@@ -53,7 +55,7 @@ def send_messages():
         
     # Creating and sending the set commands for the key-values
     for x in range(0, keyValCount):
-        message = f"set {list(keyVals.keys())[x]} {len(keyVals[list(keyVals.keys())[x]])}\r\n{keyVals[list(keyVals.keys())[x]]}\r\n"
+        message = f"set {list(keyVals.keys())[x]} {len(keyVals[list(keyVals.keys())[x]])} \r\n{keyVals[list(keyVals.keys())[x]]} \r\n"
         start = time.time()
         s.sendall(message.encode())
         print("Message Sent")
