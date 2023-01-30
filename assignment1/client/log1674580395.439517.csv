@@ -1,7 +1,0 @@
-Key,Value,Bytes,Stored?,Time to store,Retrieved Value,Retrieved Bytes,Time to get,Correct Key-Value?
-test#1,This test should fail due to the special character in the name,62,"NOT STORED
-",0.037413835525512695,This test should fail due to the special character in the name,62,0.015514850616455078,True
-hellospace,whisper 1 present world zipper space exuberant jelly suit 6 9 you space ,72,"STORED
-",0.8447747230529785,whisper 1 present world zipper space exuberant jelly suit 6 9 you space ,72,0.6217420101165771,True
-9,voyage zipper zipper present are keyboard ,42,"NOT STORED
-",0.10276961326599121,birth ,6,0.31866955757141113,False
