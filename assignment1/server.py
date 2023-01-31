@@ -63,16 +63,15 @@ def handleRequest(parsedData, conn):
         line1 = linedData[0].split(' ')
         if len(line1) < 5:
             # Finding the correct command
-            match line1[0]:
+            if line1[0] == 'set':
                 # Set command requires parsing the second line to get the value of the key 
-                case 'set':
                     try:
                         status = set(line1[1], linedData[1], line1[2])  
                         conn.sendall(f"{status}".encode())
                     except IndexError:
                         conn.sendall("NOT STORED \r\n".encode())
                 # Get command requires no further parsing, just finding the file if it exists
-                case 'get':
+            elif line1[0] == 'get':
                     try:
                         status = get(line1[1], line1[2])
                         # Sending the value back, and the end status message
@@ -82,9 +81,9 @@ def handleRequest(parsedData, conn):
                             conn.sendall(f"{status}END \r\n".encode())
                     except IndexError:
                         conn.sendall("NOT STORED \r\n".encode())
-                case _:
-                    # command does not exist 
-                    conn.sendall(f"NOT STORED \r\n".encode())
+            else:
+                # command does not exist 
+                conn.sendall(f"NOT STORED \r\n".encode())
         else:
             conn.sendall(f"NOT STORED \r\n".encode())
     else:
@@ -99,7 +98,7 @@ def handleConnection(conn):
         parsedData = data.decode()
         thread = threading.Thread(target=handleRequest, args=(parsedData,conn,))
         thread.start()
-        # handleRequest(parsedData, conn)
+    conn.close()
         
 
 if __name__ == '__main__':
