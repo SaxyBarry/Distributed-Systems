@@ -1,3 +1,10 @@
+Requirements:
+Python 3.8
+
+To Run:
+$ python3 server.py
+$ sh startclients.sh
+
 ==================================== How the server is configured ====================================
 My server is based off of the one used in lab for demonstration purposes. It consists of a main driver that does the following things in order:
 

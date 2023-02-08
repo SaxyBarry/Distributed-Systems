@@ -3,7 +3,7 @@ import socket
 import os
 import threading
 import time
-import regex
+import re
 
 # Creates a directory for storing files related to the server running: key-value storage, logs, ect...
 def establishStorage():
@@ -23,7 +23,7 @@ def set(key: str, val: str, bytes: str):
         return "NOT STORED \r\n"
     if not (len(val) == int(bytes)):
         return "NOT STORED \r\n"
-    pattern = regex.compile("[A-z0-9]+")
+    pattern = re.compile("[A-z0-9]+")
     if not bool(pattern.fullmatch(key)):
         return "NOT STORED \r\n"
     lock.acquire()
