@@ -1,0 +1,87 @@
+-----API Specifications------
+
+- HTTP server that is interactive in browser
+- JSON for sending and receiving data 
+- ZeroMQ for messaging between nodes (Allows for very large messages as well as automatic JSON encoding and decoding)
+- Modifiable config.json file - Number of workers (Reducers and Mappers), Server IP Address, Ports for servers  
+
+------Command Structure-------
+
+Commands can be invoked by utilizing proper URL structure in the browser or by using curl:
+(URL Port and IP can be modified in the configuration file)
+
+Methods: 
+    word-count:
+        Required Flags: book - Book must exist in the "books" folder, book name given should be the same as the file name
+        Optional Flags: specifier - Filtering response based on the given word 
+        Examples:
+            http://localhost:8080/?method=word-count&book=russian-short-stories.txt
+            http://localhost:8080/?method=word-count&book=russian-short-stories.txt&specifier=ebook
+    Reverse Index:
+
+------Process Communication------
+
+Uses ZeroMQ utilizing JSON structure to communicate between nodes and the API over the network
+
+- Partitioning
+    Data is never stored in shared folders/files minus the books, the webserver and master node both share access to this folder, which provides 
+    checks that ensure the book exists. Information is communicated between nodes using the ZeroMQ sockets, so in theory, 
+    these actions could be performed on separate devices. 
+- Message Formats
+    Messages are shared utilizing JSON, which allows for better classification and accessing of data within a message, for example:
+    {
+        "method":"word-count",
+        "task":"Hello, this is a test word count" 
+    }
+    The above is a mock message sent from the master node to the worker nodes that are responsible for mapping.
+
+
+------Inner Workings------
+
+1. webserver.py is ran
+2. Master Node is created
+3. Master Node creates number of workers equal to the number of workers provided in the configuration file
+4. The master node creates a ZMQ connection with each worker separately and stores all of these connections in a dictionary
+5. The workers prepare themselves to receive request from master node
+6. Master Node establishes ZeroMQ server and waits for request
+7. webserver establishes connection with master node over ZeroMQ
+8. webserver establishes it's own HTTP server and prepares to accept requests
+9. When a GET request is made to the HTTP server, it parses the passed URL looking for the method called, and passes the given parameters to the proper handlers
+10. These handlers then send the data to the Master Node over ZeroMQ
+    1. This data will contain things like - The Method, the file queried, and specifiers on the method
+11. The master node then parses the method and does either a word count on the given file or a reverse index, behavior varies, but is similar to the following
+    1. Master Node prepares file from the specified file path
+    2. Master Node partitions based on the file size and number of mappers
+    3. Master Node sends the workers the string to map over ZeroMQ, this number of mappers is specified in the configuration file
+    4. Master waits for response from every mapper
+    5. Mappers performs the mapping on the string sent, and then organize the keys based on the ASCII Value of the string modulus the number of reducers
+    6. Mappers send the dictionaries of organized, mapped keys back to the master node
+    7. The master node organizes these based on the number associated with each reducer 
+    8. The master sends the reducers the mapped dictionaries based on the dictionary modulus number which correlates to a process ID
+    9. Reducers receive the information 
+    10. Reducers perform the reducing and return the data to the master 
+    11. The master performs last minute specifier calculations (filtering by word for example)
+12. The master node sends it's reply back to the API over ZeroMQ
+13. The API formats the response in JSON structure and responds to the requestor
+
+------Logging------
+
+Each process creates and keeps a real time log of actions and events that occur on the system. All of these logs are stored 
+inside the "logging" folder. This folder contains logs for every worker, master node and webserver named accordingly.
+Every log is time stampped. 
+
+------Limitations & Assumptions------
+
+- Data is partioned based on size of data that is being passed through. Rather than using lines to determine what is sent to each mapper,
+    the master distributes every mapper an equal amount of data, this data is determined by the size of the file.
+- The master can create any number of workers, but for the workers to be created successfully, 
+    it needs access to a range of ports equal to the number of ports. The starting number of the range can be configured on the config.json
+    file ("workers":{"starting_port"}). 
+    For example:
+    You have 5 workers, and the starting_port is 5000:
+        worker 0 will access port 5000
+        worker 1 will access port 5001
+        worker 2 will access port 5002
+        worker 3 will access port 5003
+        worker 4 will access port 5004
+    Because fault tolerance is optional for undergraduates, I am making the assumption that the port will always be accessed and reserved properly. 

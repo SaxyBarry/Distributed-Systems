@@ -1,0 +1,15 @@
+{
+    "ip_address":"localhost",
+    "server":{
+        "server_port":9623,
+        "master_zmq_port":"5444"
+    },
+    "master":{
+        "num_workers":3,
+        "num_mappers": 3,
+        "num_reducers":3
+    },
+    "workers":{
+        "starting_port":4000
+    }
+}
