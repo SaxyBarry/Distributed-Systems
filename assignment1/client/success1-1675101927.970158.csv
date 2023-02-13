@@ -1,5 +1,0 @@
-Key,Value,Bytes,Stored?,Time to store,Retrieved Value,Retrieved Bytes,Time to get,Correct Key-Value?
-test1,Overwritten?,12,"STORED 
-",0.565514326095581,Overwritten?,12,0.522364616394043,True
-test2,Overwritten?,12,"STORED 
-",0.08377981185913086,Overwritten?,12,0.016134262084960938,True

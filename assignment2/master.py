@@ -15,7 +15,7 @@ class Master:
         for x in range(DATA['master']['num_workers']):
             # Stores workers in dictionary
             self.workers[x] = {}
-            self.workers[x]['process'] = Popen(['python.exe', SOURCE_DIR + "\worker.py", str(x)])
+            self.workers[x]['process'] = Popen(['python3', SOURCE_DIR + "/worker.py", str(x)])
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Establishing ZMQ Session with Worker {x}")
             # Setting up ZMQ Connection with worker
             context = zmq.Context()
@@ -119,7 +119,7 @@ if __name__ == "__main__":
     SOURCE_DIR = os.path.dirname(os.path.abspath(__file__))
     
     # Establishing logging 
-    logging.basicConfig(filename=SOURCE_DIR+'\logging\master.log', encoding='utf-8', level=logging.DEBUG)
+    logging.basicConfig(filename=SOURCE_DIR+'/logging/master.log', level=logging.DEBUG)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Starting Master Node")
     
     # Creating master that opens a ZMQ connection on the command line passed arg

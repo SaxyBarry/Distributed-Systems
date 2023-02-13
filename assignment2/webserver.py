@@ -72,10 +72,10 @@ if __name__ == "__main__":
         DATA = json.load(json_data_file)
     
     # Creating Logging
-    logging.basicConfig(filename=SOURCE_DIR+'\logging\Server.log', encoding='utf-8', level=logging.DEBUG)
+    logging.basicConfig(filename=SOURCE_DIR+'/logging/Server.log', level=logging.DEBUG)
     
     # Starting master node    
-    master = Popen(['python.exe', SOURCE_DIR + "\master.py", DATA["server"]["master_zmq_port"]])
+    master = Popen(['python3', SOURCE_DIR + "/master.py", DATA["server"]["master_zmq_port"]])
     
     #  Starting ZeroMQ
     logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Connecting to ZMQ server...")

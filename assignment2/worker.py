@@ -94,6 +94,6 @@ if __name__ == "__main__":
         DATA = json.load(json_data_file)
     
     # Creating Logging
-    logging.basicConfig(filename=SOURCE_DIR+f'\logging\worker-{sys.argv[1]}.log', encoding='utf-8', level=logging.DEBUG)
+    logging.basicConfig(filename=SOURCE_DIR+f'/logging/worker-{sys.argv[1]}.log', level=logging.DEBUG)
     worker = Worker(int(sys.argv[1]))
     worker.awaitWork()

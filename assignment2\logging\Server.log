@@ -1,0 +1,44 @@
+DEBUG:root: 12:23:56 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:23:56 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:24:12 [ SERVER ] ---- Server stopped.
+DEBUG:root: 12:24:12 [ SERVER ] ---- ZMQ stopped.
+DEBUG:root: 12:25:00 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:25:00 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:25:19 [ SERVER ] ---- Server stopped.
+DEBUG:root: 12:25:19 [ SERVER ] ---- ZMQ stopped.
+DEBUG:root: 12:26:50 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:26:50 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:27:06 [ SERVER ] ---- Server stopped.
+DEBUG:root: 12:27:06 [ SERVER ] ---- ZMQ stopped.
+DEBUG:root: 12:27:26 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:27:26 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:30:49 [ SERVER ] ---- Received GET Request
+ERROR:root: 12:30:49 [ SERVER ] ---- / IS INCORRECTLY FORMATED
+Traceback (most recent call last):
+  File "webserver.py", line 22, in do_GET
+    query = self.path.split('?')[1]
+IndexError: list index out of range
+DEBUG:root: 12:30:49 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:31:08 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:31:08 [ SERVER ] ---- Method = deji, Book = None
+ERROR:root: 12:31:08 [ SERVER ] ---- deji IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 12:31:08 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:31:43 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:31:43 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 12:31:43 [ SERVER ] ---- None book provided
+DEBUG:root: 12:31:43 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:32:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:32:02 [ SERVER ] ---- Method = word-count, Book = ulysses.txt
+DEBUG:root: 12:32:02 [ SERVER ] ---- ulysses.txt was found
+DEBUG:root: 12:32:02 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:32:02 [ SERVER ] ---- Received reply
+DEBUG:root: 12:32:02 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:32:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:32:32 [ SERVER ] ---- Method = word-count, Book = ulysses.txt
+DEBUG:root: 12:32:32 [ SERVER ] ---- ulysses.txt was found
+DEBUG:root: 12:32:32 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:32:32 [ SERVER ] ---- Received reply
+DEBUG:root: 12:32:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:32:46 [ SERVER ] ---- Server stopped.
+DEBUG:root: 12:32:46 [ SERVER ] ---- ZMQ stopped.
