@@ -1,0 +1,16 @@
+DEBUG:root: 12:10:15 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:10:15 [ SERVER ] ---- Server started http://localhost:8080
+DEBUG:root: 12:10:39 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:10:39 [ SERVER ] ---- Server started http://localhost:8080
+DEBUG:root: 12:11:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:11:00 [ SERVER ] ---- Method = word-count, Book = russian-short-stories.txt
+DEBUG:root: 12:11:00 [ SERVER ] ---- russian-short-stories.txt was found
+DEBUG:root: 12:11:00 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:11:00 [ SERVER ] ---- Received reply
+DEBUG:root: 12:11:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:11:14 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:11:14 [ SERVER ] ---- Method = word-count, Book = russian-short-stories.txt
+DEBUG:root: 12:11:14 [ SERVER ] ---- russian-short-stories.txt was found
+DEBUG:root: 12:11:14 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:11:15 [ SERVER ] ---- Received reply
+DEBUG:root: 12:11:15 [ SERVER ] ---- Sending Response
