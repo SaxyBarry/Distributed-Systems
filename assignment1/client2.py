@@ -72,7 +72,7 @@ if __name__ == '__main__':
     # Defining the server address
     establishStorage()
     HOST = "127.0.0.1"
-    PORT = 9889
+    PORT = 9179
     s = socket.socket()
     s.connect((HOST, PORT))
     results = send_messages()
