@@ -1,30 +1,4 @@
-DEBUG:root: 12:10:15 [ SERVER ] ---- Connecting to ZMQ server...
-DEBUG:root: 12:10:15 [ SERVER ] ---- Server started http://localhost:8080
-DEBUG:root: 12:10:39 [ SERVER ] ---- Connecting to ZMQ server...
-DEBUG:root: 12:10:39 [ SERVER ] ---- Server started http://localhost:8080
-DEBUG:root: 12:11:00 [ SERVER ] ---- Received GET Request
-DEBUG:root: 12:11:00 [ SERVER ] ---- Method = word-count, Book = russian-short-stories.txt
-DEBUG:root: 12:11:00 [ SERVER ] ---- russian-short-stories.txt was found
-DEBUG:root: 12:11:00 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 12:11:00 [ SERVER ] ---- Received reply
-DEBUG:root: 12:11:00 [ SERVER ] ---- Sending Response
-DEBUG:root: 12:11:14 [ SERVER ] ---- Received GET Request
-DEBUG:root: 12:11:14 [ SERVER ] ---- Method = word-count, Book = russian-short-stories.txt
-DEBUG:root: 12:11:14 [ SERVER ] ---- russian-short-stories.txt was found
-DEBUG:root: 12:11:14 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 12:11:15 [ SERVER ] ---- Received reply
-DEBUG:root: 12:11:15 [ SERVER ] ---- Sending Response
-DEBUG:root: 12:34:43 [ SERVER ] ---- Connecting to ZMQ server...
-DEBUG:root: 12:34:43 [ SERVER ] ---- Server started http://localhost:9623
-DEBUG:root: 12:34:59 [ SERVER ] ---- Received GET Request
-DEBUG:root: 12:34:59 [ SERVER ] ---- Method = word-count, Book = ulysses.txt
-DEBUG:root: 12:34:59 [ SERVER ] ---- ulysses.txt was found
-DEBUG:root: 12:34:59 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 12:34:59 [ SERVER ] ---- Received reply
-DEBUG:root: 12:34:59 [ SERVER ] ---- Sending Response
-DEBUG:root: 12:35:40 [ SERVER ] ---- Received GET Request
-DEBUG:root: 12:35:40 [ SERVER ] ---- Method = word-count, Book = longer-war-and-peace.txt
-DEBUG:root: 12:35:40 [ SERVER ] ---- longer-war-and-peace.txt was found
-DEBUG:root: 12:35:40 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 12:35:42 [ SERVER ] ---- Received reply
-DEBUG:root: 12:35:42 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:30:46 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:30:46 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:30:56 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:30:56 [ SERVER ] ---- Server started http://localhost:9623

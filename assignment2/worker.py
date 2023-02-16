@@ -9,12 +9,15 @@ class Worker:
         self.processID = processID
         self.workingStatus = False
         self.connection = "Not Established"
+        
+    # MAYBE? Intermediate Storage Implementation
         # logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [{self.processID}] Creating personal directory")
         # # Creating directory for intermediate results to be stored in
         # try:
         #     os.mkdir(SOURCE_DIR + f"\\common\\{processID}")
         # except FileExistsError:
         #     logging.exception(f"  {time.strftime('%H:%M:%S', time.localtime())} [{self.processID}] Directory already created")
+        
         # Attempting to establish connection in ZMQ with Master node
         try:
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [{self.processID}] Creating ZMQ Connection")
@@ -74,7 +77,6 @@ class Worker:
         #     with open(f'{SOURCE_DIR }\\common\\{self.processID}\\{x}.txt', 'w') as file:
         #         for y in destination[x].keys():
         #             file.write(f'{y},{destination[x][y]}\n')
-        logging.debug(destination.keys())
         return destination
                     
     def wcreducer(self, task):

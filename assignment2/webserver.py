@@ -19,10 +19,14 @@ class Server(BaseHTTPRequestHandler):
             response_data = {}
             try:
                 # Parsing inputted URL
-                query = self.path.split('?')[1]
-                query_components = dict(qc.split("=") for qc in query.split("&"))
-                method = query_components.get("method", None)
-                book = query_components.get("book", None)
+                try:
+                    query = self.path.split('?')[1]
+                    query_components = dict(qc.split("=") for qc in query.split("&"))
+                    method = query_components.get("method", None)
+                    book = query_components.get("book", None)
+                except ValueError:
+                    method = None
+                    book = None
                 logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Method = {method}, Book = {book}")
                 # Parsing which map reduce to use
                 if method == "word-count":
@@ -75,7 +79,8 @@ if __name__ == "__main__":
     logging.basicConfig(filename=SOURCE_DIR+'/logging/Server.log', level=logging.DEBUG)
     
     # Starting master node    
-    master = Popen(['python3', SOURCE_DIR + "/master.py", DATA["server"]["master_zmq_port"]])
+    master = Popen(['python ', SOURCE_DIR + "/master.py", DATA["server"]["master_zmq_port"]])
+    
     
     #  Starting ZeroMQ
     logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Connecting to ZMQ server...")

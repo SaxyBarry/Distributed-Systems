@@ -15,7 +15,7 @@ class Master:
         for x in range(DATA['master']['num_workers']):
             # Stores workers in dictionary
             self.workers[x] = {}
-            self.workers[x]['process'] = Popen(['python3', SOURCE_DIR + "/worker.py", str(x)])
+            self.workers[x]['process'] = Popen(['python', SOURCE_DIR + "/worker.py", str(x)])
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Establishing ZMQ Session with Worker {x}")
             # Setting up ZMQ Connection with worker
             context = zmq.Context()
@@ -42,22 +42,20 @@ class Master:
             fileStats = os.stat(filePath)
             
     # Step 2. Divide mapping work between mappers 
-            partition = math.ceil(fileStats.st_size / DATA['master']['num_mappers'])
-            for x in range(DATA['master']['num_mappers']):
-                text = file.read(partition)
-    
-    # # Step 1. Find file that is being requested for word count
-    #     with open(filePath, encoding="utf8") as file:
-    #         logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] file found and opened")
+            # partition = math.ceil(fileStats.st_size / DATA['master']['num_mappers'])
+            # for x in range(DATA['master']['num_mappers']):
+            #     text = file.read(partition)
             
     # # Step 2. Divide mapping work between mappers 
-    #         fileLines = file.readlines()
-    #         partition = math.ceil(len(fileLines) / DATA['master']['num_mappers'])
-    #         for x in range(DATA['master']['num_mappers']):
-    #             text = ""
-    #             for y in range(partition):
-    #                 if fileLines != []:
-    #                     text += str(fileLines.pop(0))
+            if DATA['master']['num_mappers'] > DATA['master']['num_workers']:
+                DATA['master']['num_mappers'] = DATA['master']['num_workers']
+            fileLines = file.readlines()
+            partition = math.ceil(len(fileLines) / DATA['master']['num_mappers'])
+            for x in range(DATA['master']['num_mappers']):
+                text = ""
+                for y in range(partition):
+                    if fileLines != []:
+                        text += str(fileLines.pop(0))
                 
                 # Creating a new file to send to the next worker
                 # fileKey = uuid.uuid4()
@@ -73,23 +71,28 @@ class Master:
     # Step 3. Wait for mappers to complete their work 
         mapResult = {}
         # Receive Worker Acknowledgement
+
         for x in range(DATA['master']['num_mappers']):
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Receiving message from worker {x}")
             mapResult[x] = self.workers[x]['socket'].recv_json()
             logging.debug(mapResult[x].keys())
         
+        if DATA['master']['num_reducers'] > DATA['master']['num_workers']:
+            DATA['master']['num_reducers'] = DATA['master']['num_workers']
     # Step 4. Divide work between reducers
         for x in range(DATA["master"]['num_reducers']):
             message = {"method":"reduce word count", "target":{}}
             target = {}
             for y in range(DATA["master"]['num_mappers']):
-                target[y] = mapResult[y][str(x)]
+                if str(x) in mapResult[y].keys():
+                    target[y] = mapResult[y][str(x)]
             message["target"] = target
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Sending worker {x} new reduce task")
             self.workers[x]['socket'].send_json(message)
             
     # Step 5. Wait for reducers to finish work 
         reduceResult = {}
+        response = {}
         # Receive Worker Acknowledgement
         for x in range(DATA['master']['num_reducers']):
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Receiving message from worker {x}")
@@ -101,8 +104,11 @@ class Master:
                     response = {specifier:reduceResult[x][specifier]}
             self.respond(response)
         else:
+            response = {}
+            for x in range(DATA['master']['num_reducers']):
+                response.update(reduceResult[x])
     # Step 6. Tell API user the work is completed
-            self.respond(reduceResult)
+        self.respond(response)
     
 
    # Sends messages back to the server         

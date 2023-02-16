@@ -1,48 +1,14 @@
-DEBUG:root:  12:26:50 [Master] Starting Master Node
-DEBUG:root:  12:26:50 [Master] Establishing ZMQ Session with Server
-DEBUG:root:  12:26:50 [Master] Establishing Workers
-DEBUG:root:  12:27:26 [Master] Starting Master Node
-DEBUG:root:  12:27:26 [Master] Establishing ZMQ Session with Server
-DEBUG:root:  12:27:26 [Master] Establishing Workers
-DEBUG:root:  12:27:26 [Master] Establishing ZMQ Session with Worker 0
-DEBUG:root:  12:27:26 [Master] Establishing ZMQ Session with Worker 1
-DEBUG:root:  12:27:26 [Master] Establishing ZMQ Session with Worker 2
-DEBUG:root:  12:27:26 [Master] Waiting for work....
-DEBUG:root:  12:32:02 [Master] Received Message: {'method': 'word count', 'book': '/nfs/nfs2/home/parksal/DistributedSystems/Distributed-Systems-Homework/assignment2/books/ulysses.txt', 'specifier': None}
-DEBUG:root:  12:32:02 [Master] file found and opened
-DEBUG:root:  12:32:02 [Master] Sending worker 0 new map task
-DEBUG:root:  12:32:02 [Master] Sending worker 1 new map task
-DEBUG:root:  12:32:02 [Master] Sending worker 2 new map task
-DEBUG:root:  12:32:02 [Master] Receiving message from worker 0
-DEBUG:root:dict_keys(['0', '1', '2'])
-DEBUG:root:  12:32:02 [Master] Receiving message from worker 1
-DEBUG:root:dict_keys(['2', '1', '0'])
-DEBUG:root:  12:32:02 [Master] Receiving message from worker 2
-DEBUG:root:dict_keys(['1', '0', '2'])
-DEBUG:root:  12:32:02 [Master] Sending worker 0 new reduce task
-DEBUG:root:  12:32:02 [Master] Sending worker 1 new reduce task
-DEBUG:root:  12:32:02 [Master] Sending worker 2 new reduce task
-DEBUG:root:  12:32:02 [Master] Receiving message from worker 0
-DEBUG:root:  12:32:02 [Master] Receiving message from worker 1
-DEBUG:root:  12:32:02 [Master] Receiving message from worker 2
-DEBUG:root:  12:32:02 [Master] Responding to Server
-DEBUG:root:  12:32:02 [Master] Waiting for work....
-DEBUG:root:  12:32:32 [Master] Received Message: {'method': 'word count', 'book': '/nfs/nfs2/home/parksal/DistributedSystems/Distributed-Systems-Homework/assignment2/books/ulysses.txt', 'specifier': 'clucking'}
-DEBUG:root:  12:32:32 [Master] file found and opened
-DEBUG:root:  12:32:32 [Master] Sending worker 0 new map task
-DEBUG:root:  12:32:32 [Master] Sending worker 1 new map task
-DEBUG:root:  12:32:32 [Master] Sending worker 2 new map task
-DEBUG:root:  12:32:32 [Master] Receiving message from worker 0
-DEBUG:root:dict_keys(['0', '1', '2'])
-DEBUG:root:  12:32:32 [Master] Receiving message from worker 1
-DEBUG:root:dict_keys(['2', '1', '0'])
-DEBUG:root:  12:32:32 [Master] Receiving message from worker 2
-DEBUG:root:dict_keys(['1', '0', '2'])
-DEBUG:root:  12:32:32 [Master] Sending worker 0 new reduce task
-DEBUG:root:  12:32:32 [Master] Sending worker 1 new reduce task
-DEBUG:root:  12:32:32 [Master] Sending worker 2 new reduce task
-DEBUG:root:  12:32:32 [Master] Receiving message from worker 0
-DEBUG:root:  12:32:32 [Master] Receiving message from worker 1
-DEBUG:root:  12:32:32 [Master] Receiving message from worker 2
-DEBUG:root:  12:32:32 [Master] Responding to Server
-DEBUG:root:  12:32:32 [Master] Waiting for work....
+DEBUG:root:  13:30:46 [Master] Starting Master Node
+DEBUG:root:  13:30:46 [Master] Establishing ZMQ Session with Server
+DEBUG:root:  13:30:46 [Master] Establishing Workers
+DEBUG:root:  13:30:46 [Master] Establishing ZMQ Session with Worker 0
+DEBUG:root:  13:30:46 [Master] Establishing ZMQ Session with Worker 1
+DEBUG:root:  13:30:46 [Master] Establishing ZMQ Session with Worker 2
+DEBUG:root:  13:30:46 [Master] Waiting for work....
+DEBUG:root:  13:30:56 [Master] Starting Master Node
+DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Server
+DEBUG:root:  13:30:56 [Master] Establishing Workers
+DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Worker 0
+DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Worker 1
+DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Worker 2
+DEBUG:root:  13:30:56 [Master] Waiting for work....

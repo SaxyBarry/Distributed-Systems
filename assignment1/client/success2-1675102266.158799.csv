@@ -1,0 +1,5 @@
+Key,Value,Bytes,Stored?,Time to store,Retrieved Value,Retrieved Bytes,Time to get,Correct Key-Value?
+test1,Overwritten?,12,"STORED 
+",0.5175154209136963,Overwritten?,12,0.13876986503601074,True
+test2,Overwritten?,12,"STORED 
+",0.22899508476257324,Overwritten?,12,0.4018702507019043,True
