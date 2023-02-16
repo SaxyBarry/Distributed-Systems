@@ -12,3 +12,124 @@ DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Worker 0
 DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Worker 1
 DEBUG:root:  13:30:56 [Master] Establishing ZMQ Session with Worker 2
 DEBUG:root:  13:30:56 [Master] Waiting for work....
+DEBUG:root:  14:09:46 [Master] Starting Master Node
+DEBUG:root:  14:09:46 [Master] Establishing ZMQ Session with Server
+DEBUG:root:  14:09:46 [Master] Establishing Workers
+DEBUG:root:  14:09:46 [Master] Establishing ZMQ Session with Worker 0
+DEBUG:root:  14:09:46 [Master] Establishing ZMQ Session with Worker 1
+DEBUG:root:  14:09:46 [Master] Establishing ZMQ Session with Worker 2
+DEBUG:root:  14:09:46 [Master] Waiting for work....
+DEBUG:root:  14:10:13 [Master] Received Message: {'method': 'word count', 'book': 'c:\\Users\\saxyb\\Desktop\\IU\\4-Senior Year (2022-2023)\\Semester 2\\CSCI-P 434\\homework\\assignment2\\books\\empty-test.txt', 'specifier': None}
+DEBUG:root:  14:10:13 [Master] file found and opened
+DEBUG:root:  14:10:13 [Master] Sending worker 0 new map task
+DEBUG:root:  14:10:13 [Master] Sending worker 1 new map task
+DEBUG:root:  14:10:13 [Master] Sending worker 2 new map task
+DEBUG:root:  14:10:13 [Master] Receiving message from worker 0
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:13 [Master] Receiving message from worker 1
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:13 [Master] Receiving message from worker 2
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:13 [Master] Sending worker 0 new reduce task
+DEBUG:root:  14:10:13 [Master] Sending worker 1 new reduce task
+DEBUG:root:  14:10:13 [Master] Sending worker 2 new reduce task
+DEBUG:root:  14:10:13 [Master] Receiving message from worker 0
+DEBUG:root:  14:10:13 [Master] Receiving message from worker 1
+DEBUG:root:  14:10:13 [Master] Receiving message from worker 2
+DEBUG:root:  14:10:13 [Master] Responding to Server
+DEBUG:root:  14:10:13 [Master] Waiting for work....
+DEBUG:root:  14:10:15 [Master] Received Message: {'method': 'word count', 'book': 'c:\\Users\\saxyb\\Desktop\\IU\\4-Senior Year (2022-2023)\\Semester 2\\CSCI-P 434\\homework\\assignment2\\books\\empty-test.txt', 'specifier': 'hello'}
+DEBUG:root:  14:10:15 [Master] file found and opened
+DEBUG:root:  14:10:15 [Master] Sending worker 0 new map task
+DEBUG:root:  14:10:15 [Master] Sending worker 1 new map task
+DEBUG:root:  14:10:15 [Master] Sending worker 2 new map task
+DEBUG:root:  14:10:15 [Master] Receiving message from worker 0
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:15 [Master] Receiving message from worker 1
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:15 [Master] Receiving message from worker 2
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:15 [Master] Sending worker 0 new reduce task
+DEBUG:root:  14:10:15 [Master] Sending worker 1 new reduce task
+DEBUG:root:  14:10:15 [Master] Sending worker 2 new reduce task
+DEBUG:root:  14:10:15 [Master] Receiving message from worker 0
+DEBUG:root:  14:10:15 [Master] Receiving message from worker 1
+DEBUG:root:  14:10:15 [Master] Receiving message from worker 2
+DEBUG:root:  14:10:15 [Master] Responding to Server
+DEBUG:root:  14:10:15 [Master] Waiting for work....
+DEBUG:root:  14:10:17 [Master] Received Message: {'method': 'word count', 'book': 'c:\\Users\\saxyb\\Desktop\\IU\\4-Senior Year (2022-2023)\\Semester 2\\CSCI-P 434\\homework\\assignment2\\books\\comma-test.txt', 'specifier': 'hello'}
+DEBUG:root:  14:10:17 [Master] file found and opened
+DEBUG:root:  14:10:17 [Master] Sending worker 0 new map task
+DEBUG:root:  14:10:17 [Master] Sending worker 1 new map task
+DEBUG:root:  14:10:17 [Master] Sending worker 2 new map task
+DEBUG:root:  14:10:17 [Master] Receiving message from worker 0
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:17 [Master] Receiving message from worker 1
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:17 [Master] Receiving message from worker 2
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:17 [Master] Sending worker 0 new reduce task
+DEBUG:root:  14:10:17 [Master] Sending worker 1 new reduce task
+DEBUG:root:  14:10:17 [Master] Sending worker 2 new reduce task
+DEBUG:root:  14:10:17 [Master] Receiving message from worker 0
+DEBUG:root:  14:10:17 [Master] Receiving message from worker 1
+DEBUG:root:  14:10:17 [Master] Receiving message from worker 2
+DEBUG:root:  14:10:17 [Master] Responding to Server
+DEBUG:root:  14:10:17 [Master] Waiting for work....
+DEBUG:root:  14:10:19 [Master] Received Message: {'method': 'word count', 'book': 'c:\\Users\\saxyb\\Desktop\\IU\\4-Senior Year (2022-2023)\\Semester 2\\CSCI-P 434\\homework\\assignment2\\books\\single-test.txt', 'specifier': 'hello'}
+DEBUG:root:  14:10:19 [Master] file found and opened
+DEBUG:root:  14:10:19 [Master] Sending worker 0 new map task
+DEBUG:root:  14:10:19 [Master] Sending worker 1 new map task
+DEBUG:root:  14:10:19 [Master] Sending worker 2 new map task
+DEBUG:root:  14:10:19 [Master] Receiving message from worker 0
+DEBUG:root:dict_keys(['1'])
+DEBUG:root:  14:10:19 [Master] Receiving message from worker 1
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:19 [Master] Receiving message from worker 2
+DEBUG:root:dict_keys([])
+DEBUG:root:  14:10:19 [Master] Sending worker 0 new reduce task
+DEBUG:root:  14:10:19 [Master] Sending worker 1 new reduce task
+DEBUG:root:  14:10:19 [Master] Sending worker 2 new reduce task
+DEBUG:root:  14:10:19 [Master] Receiving message from worker 0
+DEBUG:root:  14:10:19 [Master] Receiving message from worker 1
+DEBUG:root:  14:10:19 [Master] Receiving message from worker 2
+DEBUG:root:  14:10:19 [Master] Responding to Server
+DEBUG:root:  14:10:19 [Master] Waiting for work....
+DEBUG:root:  14:10:21 [Master] Received Message: {'method': 'word count', 'book': 'c:\\Users\\saxyb\\Desktop\\IU\\4-Senior Year (2022-2023)\\Semester 2\\CSCI-P 434\\homework\\assignment2\\books\\two-word-test.txt', 'specifier': 'hello'}
+DEBUG:root:  14:10:21 [Master] file found and opened
+DEBUG:root:  14:10:21 [Master] Sending worker 0 new map task
+DEBUG:root:  14:10:21 [Master] Sending worker 1 new map task
+DEBUG:root:  14:10:21 [Master] Sending worker 2 new map task
+DEBUG:root:  14:10:21 [Master] Receiving message from worker 0
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:21 [Master] Receiving message from worker 1
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:21 [Master] Receiving message from worker 2
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:21 [Master] Sending worker 0 new reduce task
+DEBUG:root:  14:10:21 [Master] Sending worker 1 new reduce task
+DEBUG:root:  14:10:21 [Master] Sending worker 2 new reduce task
+DEBUG:root:  14:10:21 [Master] Receiving message from worker 0
+DEBUG:root:  14:10:21 [Master] Receiving message from worker 1
+DEBUG:root:  14:10:21 [Master] Receiving message from worker 2
+DEBUG:root:  14:10:21 [Master] Responding to Server
+DEBUG:root:  14:10:21 [Master] Waiting for work....
+DEBUG:root:  14:10:24 [Master] Received Message: {'method': 'word count', 'book': 'c:\\Users\\saxyb\\Desktop\\IU\\4-Senior Year (2022-2023)\\Semester 2\\CSCI-P 434\\homework\\assignment2\\books\\two-word-test.txt', 'specifier': None}
+DEBUG:root:  14:10:24 [Master] file found and opened
+DEBUG:root:  14:10:24 [Master] Sending worker 0 new map task
+DEBUG:root:  14:10:24 [Master] Sending worker 1 new map task
+DEBUG:root:  14:10:24 [Master] Sending worker 2 new map task
+DEBUG:root:  14:10:24 [Master] Receiving message from worker 0
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:24 [Master] Receiving message from worker 1
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:24 [Master] Receiving message from worker 2
+DEBUG:root:dict_keys(['1', '0'])
+DEBUG:root:  14:10:24 [Master] Sending worker 0 new reduce task
+DEBUG:root:  14:10:24 [Master] Sending worker 1 new reduce task
+DEBUG:root:  14:10:24 [Master] Sending worker 2 new reduce task
+DEBUG:root:  14:10:24 [Master] Receiving message from worker 0
+DEBUG:root:  14:10:24 [Master] Receiving message from worker 1
+DEBUG:root:  14:10:24 [Master] Receiving message from worker 2
+DEBUG:root:  14:10:24 [Master] Responding to Server
+DEBUG:root:  14:10:24 [Master] Waiting for work....

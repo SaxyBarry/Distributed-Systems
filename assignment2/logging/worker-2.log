@@ -2,3 +2,83 @@ DEBUG:root:  13:30:46 [2] Creating ZMQ Connection
 DEBUG:root:  13:30:46 [2] is waiting for work
 DEBUG:root:  13:30:56 [2] Creating ZMQ Connection
 DEBUG:root:  13:30:56 [2] is waiting for work
+DEBUG:root:  14:09:46 [2] Creating ZMQ Connection
+DEBUG:root:  14:09:46 [2] is waiting for work
+DEBUG:root:  14:10:13 [2] received work
+DEBUG:root:  14:10:13 [2] is working:
+    Task: map word count
+DEBUG:root:{}
+DEBUG:root:  14:10:13 [2] is done working....
+DEBUG:root:  14:10:13 [2] is responding
+DEBUG:root:  14:10:13 [2] is waiting for work
+DEBUG:root:  14:10:13 [2] received work
+DEBUG:root:  14:10:13 [2] is working:
+    Task: reduce word count
+DEBUG:root:  14:10:13 [2] is done working....
+DEBUG:root:  14:10:13 [2] is responding
+DEBUG:root:  14:10:13 [2] is waiting for work
+DEBUG:root:  14:10:15 [2] received work
+DEBUG:root:  14:10:15 [2] is working:
+    Task: map word count
+DEBUG:root:{}
+DEBUG:root:  14:10:15 [2] is done working....
+DEBUG:root:  14:10:15 [2] is responding
+DEBUG:root:  14:10:15 [2] is waiting for work
+DEBUG:root:  14:10:15 [2] received work
+DEBUG:root:  14:10:15 [2] is working:
+    Task: reduce word count
+DEBUG:root:  14:10:15 [2] is done working....
+DEBUG:root:  14:10:15 [2] is responding
+DEBUG:root:  14:10:15 [2] is waiting for work
+DEBUG:root:  14:10:17 [2] received work
+DEBUG:root:  14:10:17 [2] is working:
+    Task: map word count
+DEBUG:root:{}
+DEBUG:root:  14:10:17 [2] is done working....
+DEBUG:root:  14:10:17 [2] is responding
+DEBUG:root:  14:10:17 [2] is waiting for work
+DEBUG:root:  14:10:17 [2] received work
+DEBUG:root:  14:10:17 [2] is working:
+    Task: reduce word count
+DEBUG:root:  14:10:17 [2] is done working....
+DEBUG:root:  14:10:17 [2] is responding
+DEBUG:root:  14:10:17 [2] is waiting for work
+DEBUG:root:  14:10:19 [2] received work
+DEBUG:root:  14:10:19 [2] is working:
+    Task: map word count
+DEBUG:root:{}
+DEBUG:root:  14:10:19 [2] is done working....
+DEBUG:root:  14:10:19 [2] is responding
+DEBUG:root:  14:10:19 [2] is waiting for work
+DEBUG:root:  14:10:19 [2] received work
+DEBUG:root:  14:10:19 [2] is working:
+    Task: reduce word count
+DEBUG:root:  14:10:19 [2] is done working....
+DEBUG:root:  14:10:19 [2] is responding
+DEBUG:root:  14:10:19 [2] is waiting for work
+DEBUG:root:  14:10:21 [2] received work
+DEBUG:root:  14:10:21 [2] is working:
+    Task: map word count
+DEBUG:root:{'hello': 1, 'world': 1}
+DEBUG:root:  14:10:21 [2] is done working....
+DEBUG:root:  14:10:21 [2] is responding
+DEBUG:root:  14:10:21 [2] is waiting for work
+DEBUG:root:  14:10:21 [2] received work
+DEBUG:root:  14:10:21 [2] is working:
+    Task: reduce word count
+DEBUG:root:  14:10:21 [2] is done working....
+DEBUG:root:  14:10:21 [2] is responding
+DEBUG:root:  14:10:21 [2] is waiting for work
+DEBUG:root:  14:10:24 [2] received work
+DEBUG:root:  14:10:24 [2] is working:
+    Task: map word count
+DEBUG:root:{'hello': 1, 'world': 1}
+DEBUG:root:  14:10:24 [2] is done working....
+DEBUG:root:  14:10:24 [2] is responding
+DEBUG:root:  14:10:24 [2] is waiting for work
+DEBUG:root:  14:10:24 [2] received work
+DEBUG:root:  14:10:24 [2] is working:
+    Task: reduce word count
+DEBUG:root:  14:10:24 [2] is done working....
+DEBUG:root:  14:10:24 [2] is responding
+DEBUG:root:  14:10:24 [2] is waiting for work

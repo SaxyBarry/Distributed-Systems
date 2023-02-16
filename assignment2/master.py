@@ -75,7 +75,6 @@ class Master:
         for x in range(DATA['master']['num_mappers']):
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Receiving message from worker {x}")
             mapResult[x] = self.workers[x]['socket'].recv_json()
-            logging.debug(mapResult[x].keys())
         
         if DATA['master']['num_reducers'] > DATA['master']['num_workers']:
             DATA['master']['num_reducers'] = DATA['master']['num_workers']

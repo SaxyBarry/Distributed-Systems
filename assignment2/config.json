@@ -11,8 +11,5 @@
     },
     "workers":{
         "starting_port":4000
-    },
-    "keyvalue":{
-        "port":9625
     }
 }
