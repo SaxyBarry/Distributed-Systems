@@ -2,14 +2,14 @@
     "ip_address":"localhost",
     "server":{
         "server_port":9623,
-        "master_zmq_port":"5444"
+        "master_zmq_port":"5434"
     },
     "master":{
-        "num_workers":3,
-        "num_mappers": 3,
-        "num_reducers":3
+        "num_workers":2,
+        "num_mappers": 1,
+        "num_reducers":1
     },
     "workers":{
-        "starting_port":4000
+        "worker_ports":[4010, 4020]
     }
 }

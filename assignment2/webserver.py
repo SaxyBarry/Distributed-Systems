@@ -32,17 +32,13 @@ class Server(BaseHTTPRequestHandler):
                 if method == "word-count":
                     # Parsing which data set to use
                     if book != None:
-                        # If that data set exists, then begin the word count on it
-                        bookPath = Path(SOURCE_DIR+"/books/"+book)
-                        if bookPath.is_file():
-                            logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- {book} was found")
-                            specifier = query_components.get("specifier", None)
-                            data = self.wordCounter(bookPath, specifier) 
-                            response_data = {'result':data}
-                        # Book does not exist
-                        else:
+                        specifier = query_components.get("specifier", None)
+                        data = self.wordCounter(book, specifier) 
+                        if data == {'error':f'{book} was not found'}:
                             logging.error(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- {book} was not found")
                             response_data = {'error':f'{book} was not found'}
+                        else:
+                            response_data = {'result':data}
                     # Book was not given
                     else:
                         logging.error(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- None book provided")
@@ -58,7 +54,7 @@ class Server(BaseHTTPRequestHandler):
             logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Sending Response")
             self._send_response(200, response_data)
     
-    # Handles comms with the Master node for the word counter request
+    # Handles comms with the Master no  de for the word counter request
     def wordCounter(self, bookPath, specifier):
         request = "word count"
         logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Sending request {request}...")
@@ -72,7 +68,7 @@ if __name__ == "__main__":
     SOURCE_DIR = os.path.dirname(os.path.abspath(__file__))
     
     # Loading from config file
-    with open("config.json") as json_data_file:
+    with open(SOURCE_DIR+"/config.json") as json_data_file:
         DATA = json.load(json_data_file)
     
     # Creating Logging
@@ -97,6 +93,7 @@ if __name__ == "__main__":
         webServer.serve_forever()
     except KeyboardInterrupt:
         pass
+    
     logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Server stopped.")
     master.terminate()
     logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- ZMQ stopped.")

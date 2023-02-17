@@ -1,69 +1,21 @@
-DEBUG:root: 13:30:46 [ SERVER ] ---- Connecting to ZMQ server...
-DEBUG:root: 13:30:46 [ SERVER ] ---- Server started http://localhost:9623
-DEBUG:root: 13:30:56 [ SERVER ] ---- Connecting to ZMQ server...
-DEBUG:root: 13:30:56 [ SERVER ] ---- Server started http://localhost:9623
-DEBUG:root: 14:09:46 [ SERVER ] ---- Connecting to ZMQ server...
-DEBUG:root: 14:09:46 [ SERVER ] ---- Server started http://localhost:9623
-DEBUG:root: 14:10:01 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:01 [ SERVER ] ---- Method = word-count, Book = 
-ERROR:root: 14:10:01 [ SERVER ] ----  was not found
-DEBUG:root: 14:10:01 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:03 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:03 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
-ERROR:root: 14:10:03 [ SERVER ] ---- thisdoesnotexist was not found
-DEBUG:root: 14:10:03 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:05 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:05 [ SERVER ] ---- Method = word-count, Book = None
-ERROR:root: 14:10:05 [ SERVER ] ---- None book provided
-DEBUG:root: 14:10:05 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:07 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:07 [ SERVER ] ---- Method = None, Book = comma-test.txt
-ERROR:root: 14:10:07 [ SERVER ] ---- None IS AN INVALID COMMAND
-NoneType: None
-DEBUG:root: 14:10:07 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:09 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:09 [ SERVER ] ---- Method = notamethod, Book = comma-test.txt
-ERROR:root: 14:10:09 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
-NoneType: None
-DEBUG:root: 14:10:09 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:11 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:11 [ SERVER ] ---- Method = None, Book = None
-ERROR:root: 14:10:11 [ SERVER ] ---- None IS AN INVALID COMMAND
-NoneType: None
-DEBUG:root: 14:10:11 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:13 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:13 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
-DEBUG:root: 14:10:13 [ SERVER ] ---- empty-test.txt was found
-DEBUG:root: 14:10:13 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 14:10:13 [ SERVER ] ---- Received reply
-DEBUG:root: 14:10:13 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:15 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:15 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
-DEBUG:root: 14:10:15 [ SERVER ] ---- empty-test.txt was found
-DEBUG:root: 14:10:15 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 14:10:15 [ SERVER ] ---- Received reply
-DEBUG:root: 14:10:15 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:17 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:17 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
-DEBUG:root: 14:10:17 [ SERVER ] ---- comma-test.txt was found
-DEBUG:root: 14:10:17 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 14:10:17 [ SERVER ] ---- Received reply
-DEBUG:root: 14:10:17 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:19 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:19 [ SERVER ] ---- Method = word-count, Book = single-test.txt
-DEBUG:root: 14:10:19 [ SERVER ] ---- single-test.txt was found
-DEBUG:root: 14:10:19 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 14:10:19 [ SERVER ] ---- Received reply
-DEBUG:root: 14:10:19 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:21 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:21 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
-DEBUG:root: 14:10:21 [ SERVER ] ---- two-word-test.txt was found
-DEBUG:root: 14:10:21 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 14:10:21 [ SERVER ] ---- Received reply
-DEBUG:root: 14:10:21 [ SERVER ] ---- Sending Response
-DEBUG:root: 14:10:24 [ SERVER ] ---- Received GET Request
-DEBUG:root: 14:10:24 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
-DEBUG:root: 14:10:24 [ SERVER ] ---- two-word-test.txt was found
-DEBUG:root: 14:10:24 [ SERVER ] ---- Sending request word count...
-DEBUG:root: 14:10:24 [ SERVER ] ---- Received reply
-DEBUG:root: 14:10:24 [ SERVER ] ---- Sending Response
+DEBUG:root: 12:16:56 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:16:56 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:17:21 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:17:21 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 12:17:21 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:20:08 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:20:08 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:20:15 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:20:15 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 12:20:15 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:22:01 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:22:01 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:22:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 12:22:02 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 12:22:02 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 12:26:35 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:26:35 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:26:58 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:26:58 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 12:27:50 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 12:27:50 [ SERVER ] ---- Server started http://localhost:9623

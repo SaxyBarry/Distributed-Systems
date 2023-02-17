@@ -101,3 +101,6 @@ Every log is time stampped.
 [ ] Report
 [ ] OPTIONAL - Key-Value Store
 [ ] OPTIONAL - Fault Tolerance
+
+HeartBeat Message- Periodically ensuring process is still alive 
+MAPPERS MUST NOT SEND BACK TO MASTER
