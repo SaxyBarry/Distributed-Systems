@@ -958,3 +958,135 @@ DEBUG:root:  15:38:19 [Worker] reduce complete
 DEBUG:root:  15:38:19 [Worker] output sent back to master
 DEBUG:root:  15:38:19 [Worker] is done working....
 DEBUG:root:  15:38:19 [Worker] is waiting for work
+DEBUG:root:  15:39:43 [Worker] Creating ZMQ Connection
+DEBUG:root:  15:39:43 [Worker] is waiting for work
+DEBUG:root:  15:39:45 [Worker] received work
+DEBUG:root:  15:39:45 [Worker] is working:
+    Task: reduce word count
+DEBUG:root:  15:39:45 [Worker] Receiving message 0 
+DEBUG:root:  15:39:45 [Worker] Receiving message 1 
+DEBUG:root:  15:39:45 [Worker] Receiving message 2 
+DEBUG:root:  15:39:45 [Worker] Receiving message 3 
+DEBUG:root:  15:39:45 [Worker] Receiving message 4 
+DEBUG:root:  15:39:45 [Worker] is perfomring reduce
+DEBUG:root:  15:39:45 [Worker] reduce complete
+DEBUG:root:  15:39:45 [Worker] output sent back to master
+DEBUG:root:  15:39:45 [Worker] is done working....
+DEBUG:root:  15:39:45 [Worker] is waiting for work
+DEBUG:root:  15:39:47 [Worker] received work
+DEBUG:root:  15:39:47 [Worker] is working:
+    Task: reduce word count
+DEBUG:root:  15:39:47 [Worker] Receiving message 0 
+DEBUG:root:  15:39:47 [Worker] Receiving message 1 
+DEBUG:root:  15:39:47 [Worker] Receiving message 2 
+DEBUG:root:  15:39:47 [Worker] Receiving message 3 
+DEBUG:root:  15:39:47 [Worker] Receiving message 4 
+DEBUG:root:  15:39:47 [Worker] is perfomring reduce
+DEBUG:root:  15:39:47 [Worker] reduce complete
+DEBUG:root:  15:39:47 [Worker] output sent back to master
+DEBUG:root:  15:39:47 [Worker] is done working....
+DEBUG:root:  15:39:47 [Worker] is waiting for work
+DEBUG:root:  15:39:49 [Worker] received work
+DEBUG:root:  15:39:49 [Worker] is working:
+    Task: reduce word count
+DEBUG:root:  15:39:49 [Worker] Receiving message 0 
+DEBUG:root:  15:39:49 [Worker] Receiving message 1 
+DEBUG:root:  15:39:49 [Worker] Receiving message 2 
+DEBUG:root:  15:39:49 [Worker] Receiving message 3 
+DEBUG:root:  15:39:49 [Worker] Receiving message 4 
+DEBUG:root:  15:39:49 [Worker] is perfomring reduce
+DEBUG:root:  15:39:49 [Worker] reduce complete
+DEBUG:root:  15:39:49 [Worker] output sent back to master
+DEBUG:root:  15:39:49 [Worker] is done working....
+DEBUG:root:  15:39:49 [Worker] is waiting for work
+DEBUG:root:  15:39:51 [Worker] received work
+DEBUG:root:  15:39:51 [Worker] is working:
+    Task: reduce word count
+DEBUG:root:  15:39:51 [Worker] Receiving message 0 
+DEBUG:root:  15:39:51 [Worker] Receiving message 1 
+DEBUG:root:  15:39:51 [Worker] Receiving message 2 
+DEBUG:root:  15:39:51 [Worker] Receiving message 3 
+DEBUG:root:  15:39:51 [Worker] Receiving message 4 
+DEBUG:root:  15:39:51 [Worker] is perfomring reduce
+DEBUG:root:  15:39:51 [Worker] reduce complete
+DEBUG:root:  15:39:51 [Worker] output sent back to master
+DEBUG:root:  15:39:51 [Worker] is done working....
+DEBUG:root:  15:39:51 [Worker] is waiting for work
+DEBUG:root:  15:39:53 [Worker] received work
+DEBUG:root:  15:39:53 [Worker] is working:
+    Task: reduce word count
+DEBUG:root:  15:39:53 [Worker] Receiving message 0 
+DEBUG:root:  15:39:53 [Worker] Receiving message 1 
+DEBUG:root:  15:39:53 [Worker] Receiving message 2 
+DEBUG:root:  15:39:53 [Worker] Receiving message 3 
+DEBUG:root:  15:39:53 [Worker] Receiving message 4 
+DEBUG:root:  15:39:53 [Worker] is perfomring reduce
+DEBUG:root:  15:39:53 [Worker] reduce complete
+DEBUG:root:  15:39:53 [Worker] output sent back to master
+DEBUG:root:  15:39:53 [Worker] is done working....
+DEBUG:root:  15:39:53 [Worker] is waiting for work
+DEBUG:root:  15:39:55 [Worker] received work
+DEBUG:root:  15:39:55 [Worker] is working:
+    Task: reduce word count
+DEBUG:root:  15:39:55 [Worker] Receiving message 0 
+DEBUG:root:  15:39:55 [Worker] Receiving message 1 
+DEBUG:root:  15:39:55 [Worker] Receiving message 2 
+DEBUG:root:  15:39:55 [Worker] Receiving message 3 
+DEBUG:root:  15:39:55 [Worker] Receiving message 4 
+DEBUG:root:  15:39:55 [Worker] is perfomring reduce
+DEBUG:root:  15:39:55 [Worker] reduce complete
+DEBUG:root:  15:39:55 [Worker] output sent back to master
+DEBUG:root:  15:39:55 [Worker] is done working....
+DEBUG:root:  15:39:55 [Worker] is waiting for work
+DEBUG:root:  15:39:57 [Worker] received work
+DEBUG:root:  15:39:57 [Worker] is working:
+    Task: reduce inverted index
+DEBUG:root:  15:39:57 [Worker] Receiving message 0 
+DEBUG:root:  15:39:57 [Worker] Receiving message 1 
+DEBUG:root:  15:39:57 [Worker] Receiving message 2 
+DEBUG:root:  15:39:57 [Worker] Receiving message 3 
+DEBUG:root:  15:39:57 [Worker] Receiving message 4 
+DEBUG:root:  15:39:57 [Worker] is perfomring reduce
+DEBUG:root:  15:39:57 [Worker] reduce complete
+DEBUG:root:  15:39:57 [Worker] output sent back to master
+DEBUG:root:  15:39:57 [Worker] is done working....
+DEBUG:root:  15:39:57 [Worker] is waiting for work
+DEBUG:root:  15:40:00 [Worker] received work
+DEBUG:root:  15:40:00 [Worker] is working:
+    Task: reduce inverted index
+DEBUG:root:  15:40:00 [Worker] Receiving message 0 
+DEBUG:root:  15:40:00 [Worker] Receiving message 1 
+DEBUG:root:  15:40:00 [Worker] Receiving message 2 
+DEBUG:root:  15:40:00 [Worker] Receiving message 3 
+DEBUG:root:  15:40:00 [Worker] Receiving message 4 
+DEBUG:root:  15:40:00 [Worker] is perfomring reduce
+DEBUG:root:  15:40:00 [Worker] reduce complete
+DEBUG:root:  15:40:00 [Worker] output sent back to master
+DEBUG:root:  15:40:00 [Worker] is done working....
+DEBUG:root:  15:40:00 [Worker] is waiting for work
+DEBUG:root:  15:40:02 [Worker] received work
+DEBUG:root:  15:40:02 [Worker] is working:
+    Task: reduce inverted index
+DEBUG:root:  15:40:02 [Worker] Receiving message 0 
+DEBUG:root:  15:40:02 [Worker] Receiving message 1 
+DEBUG:root:  15:40:02 [Worker] Receiving message 2 
+DEBUG:root:  15:40:02 [Worker] Receiving message 3 
+DEBUG:root:  15:40:02 [Worker] Receiving message 4 
+DEBUG:root:  15:40:02 [Worker] is perfomring reduce
+DEBUG:root:  15:40:02 [Worker] reduce complete
+DEBUG:root:  15:40:02 [Worker] output sent back to master
+DEBUG:root:  15:40:02 [Worker] is done working....
+DEBUG:root:  15:40:02 [Worker] is waiting for work
+DEBUG:root:  15:40:04 [Worker] received work
+DEBUG:root:  15:40:04 [Worker] is working:
+    Task: reduce inverted index
+DEBUG:root:  15:40:04 [Worker] Receiving message 0 
+DEBUG:root:  15:40:04 [Worker] Receiving message 1 
+DEBUG:root:  15:40:04 [Worker] Receiving message 2 
+DEBUG:root:  15:40:04 [Worker] Receiving message 3 
+DEBUG:root:  15:40:04 [Worker] Receiving message 4 
+DEBUG:root:  15:40:04 [Worker] is perfomring reduce
+DEBUG:root:  15:40:04 [Worker] reduce complete
+DEBUG:root:  15:40:04 [Worker] output sent back to master
+DEBUG:root:  15:40:04 [Worker] is done working....
+DEBUG:root:  15:40:04 [Worker] is waiting for work

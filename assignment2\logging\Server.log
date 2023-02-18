@@ -999,3 +999,55 @@ DEBUG:root: 15:38:19 [ SERVER ] ---- Method = inverted-index, Directory = books2
 DEBUG:root: 15:38:19 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'foxdedededed'}...
 DEBUG:root: 15:38:19 [ SERVER ] ---- Received reply
 DEBUG:root: 15:38:19 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:43 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:39:43 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:39:45 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:45 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:39:45 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:39:45 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:45 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:47 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:47 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:39:47 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:39:47 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:47 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:49 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:49 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 15:39:49 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:39:49 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:49 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:51 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 15:39:51 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:39:51 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:51 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:53 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:53 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:39:53 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:39:53 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:53 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:55 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:55 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:39:55 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:39:55 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:55 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:39:57 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:39:57 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:39:57 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': None}...
+DEBUG:root: 15:39:57 [ SERVER ] ---- Received reply
+DEBUG:root: 15:39:57 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:40:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:40:00 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:40:00 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 15:40:00 [ SERVER ] ---- Received reply
+DEBUG:root: 15:40:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:40:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:40:02 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 15:40:02 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}...
+DEBUG:root: 15:40:02 [ SERVER ] ---- Received reply
+DEBUG:root: 15:40:02 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:40:04 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:40:04 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 15:40:04 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'foxdedededed'}...
+DEBUG:root: 15:40:04 [ SERVER ] ---- Received reply
+DEBUG:root: 15:40:04 [ SERVER ] ---- Sending Response
