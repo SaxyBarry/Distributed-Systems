@@ -17,7 +17,7 @@ def establishWorkers():
     # Creating Reducers
     for x in range(DATA['master']['num_mappers'], DATA['master']['num_workers']):
         reducers[x] = {}
-        reducers[x]['process'] = Popen(['python', SOURCE_DIR + "/worker.py", str(DATA['workers']['worker_ports'][x])])
+        reducers[x]['process'] = Popen([DATA['pythonCommand'], SOURCE_DIR + "/worker.py", str(DATA['workers']['worker_ports'][x])])
         socket = context.socket(zmq.REQ)
         socket.connect(f"tcp://{DATA['ip_address']}:{DATA['workers']['worker_ports'][x]}")
         reducers[x]['socket'] = socket

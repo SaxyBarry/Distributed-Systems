@@ -1,6 +1,6 @@
 {
     "ip_address":"localhost",
-    "pythonCommand":"python3",
+    "pythonCommand":"python",
     "server":{
         "server_port":9623,
         "master_zmq_port":5434

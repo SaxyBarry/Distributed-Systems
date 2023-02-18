@@ -2535,3 +2535,243 @@ DEBUG:root:  15:40:04 [Master] Receiving message from worker 8
 DEBUG:root:  15:40:04 [Master] Receiving message from worker 9
 DEBUG:root:  15:40:04 [Master] Responding to Server
 DEBUG:root:  15:40:04 [Master] Waiting for work....
+DEBUG:root:  15:57:50 [Master] Starting Master Node
+DEBUG:root:  15:57:50 [Master] Establishing ZMQ Session with Server
+DEBUG:root:  15:57:50 [Master] Establishing Workers
+DEBUG:root:  15:57:50 [Master] Waiting for work....
+DEBUG:root:  15:58:14 [Master] Received Message: {'method': 'word count', 'book': 'empty-test.txt', 'specifier': None}
+DEBUG:root:  15:58:14 [Master] file found and opened
+DEBUG:root:  15:58:14 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:14 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:14 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:14 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:14 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:14 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:14 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:14 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:14 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:14 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:14 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:14 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:14 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:14 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:14 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:14 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:14 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:14 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:14 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:14 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:14 [Master] Responding to Server
+DEBUG:root:  15:58:14 [Master] Waiting for work....
+DEBUG:root:  15:58:16 [Master] Received Message: {'method': 'word count', 'book': 'empty-test.txt', 'specifier': 'hello'}
+DEBUG:root:  15:58:16 [Master] file found and opened
+DEBUG:root:  15:58:16 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:16 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:16 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:16 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:16 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:16 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:16 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:16 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:16 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:16 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:16 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:16 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:16 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:16 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:16 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:16 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:16 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:16 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:16 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:16 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:16 [Master] Responding to Server
+DEBUG:root:  15:58:16 [Master] Waiting for work....
+DEBUG:root:  15:58:18 [Master] Received Message: {'method': 'word count', 'book': 'comma-test.txt', 'specifier': 'hello'}
+DEBUG:root:  15:58:18 [Master] file found and opened
+DEBUG:root:  15:58:18 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:18 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:18 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:18 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:18 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:18 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:18 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:18 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:18 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:18 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:18 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:18 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:18 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:18 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:18 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:18 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:18 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:18 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:18 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:18 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:18 [Master] Responding to Server
+DEBUG:root:  15:58:18 [Master] Waiting for work....
+DEBUG:root:  15:58:20 [Master] Received Message: {'method': 'word count', 'book': 'single-test.txt', 'specifier': 'hello'}
+DEBUG:root:  15:58:20 [Master] file found and opened
+DEBUG:root:  15:58:20 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:20 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:20 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:20 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:20 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:20 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:20 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:20 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:20 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:20 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:20 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:20 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:20 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:20 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:20 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:20 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:20 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:20 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:20 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:20 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:20 [Master] Responding to Server
+DEBUG:root:  15:58:20 [Master] Waiting for work....
+DEBUG:root:  15:58:22 [Master] Received Message: {'method': 'word count', 'book': 'two-word-test.txt', 'specifier': 'hello'}
+DEBUG:root:  15:58:22 [Master] file found and opened
+DEBUG:root:  15:58:22 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:22 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:22 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:22 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:22 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:22 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:22 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:22 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:22 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:22 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:22 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:22 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:22 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:22 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:23 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:23 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:23 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:23 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:23 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:23 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:23 [Master] Responding to Server
+DEBUG:root:  15:58:23 [Master] Waiting for work....
+DEBUG:root:  15:58:25 [Master] Received Message: {'method': 'word count', 'book': 'two-word-test.txt', 'specifier': None}
+DEBUG:root:  15:58:25 [Master] file found and opened
+DEBUG:root:  15:58:25 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:25 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:25 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:25 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:25 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:25 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:25 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:25 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:25 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:25 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:25 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:25 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:25 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:25 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:25 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:25 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:25 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:25 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:25 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:25 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:25 [Master] Responding to Server
+DEBUG:root:  15:58:25 [Master] Waiting for work....
+DEBUG:root:  15:58:27 [Master] Received Message: {'method': 'inverted index', 'directory': 'empty', 'specifier': None}
+DEBUG:root:  15:58:27 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:27 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:27 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:27 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:27 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:27 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:27 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:27 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:27 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:27 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:27 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:27 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:27 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:27 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:27 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:27 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:27 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:27 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:27 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:27 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:27 [Master] Responding to Server
+DEBUG:root:  15:58:27 [Master] Waiting for work....
+DEBUG:root:  15:58:29 [Master] Received Message: {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}
+DEBUG:root:  15:58:29 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:29 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:29 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:29 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:29 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:29 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:29 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:29 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:29 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:29 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:29 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:29 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:29 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:29 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:29 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:29 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:29 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:29 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:29 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:29 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:29 [Master] Responding to Server
+DEBUG:root:  15:58:29 [Master] Waiting for work....
+DEBUG:root:  15:58:31 [Master] Received Message: {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}
+DEBUG:root:  15:58:31 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:58:31 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:58:31 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:58:31 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:58:31 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:58:31 [Master] Sending worker 0 new map task
+DEBUG:root:  15:58:31 [Master] Sending worker 1 new map task
+DEBUG:root:  15:58:31 [Master] Sending worker 2 new map task
+DEBUG:root:  15:58:31 [Master] Sending worker 3 new map task
+DEBUG:root:  15:58:31 [Master] Sending worker 4 new map task
+DEBUG:root:  15:58:31 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:58:31 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:58:31 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:58:31 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:58:31 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:58:31 [Master] Receiving message from worker 5
+DEBUG:root:  15:58:31 [Master] Receiving message from worker 6
+DEBUG:root:  15:58:31 [Master] Receiving message from worker 7
+DEBUG:root:  15:58:31 [Master] Receiving message from worker 8
+DEBUG:root:  15:58:31 [Master] Receiving message from worker 9
+DEBUG:root:  15:58:31 [Master] Responding to Server
+DEBUG:root:  15:58:31 [Master] Waiting for work....
+DEBUG:root:  15:59:08 [Master] Received Message: {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}
+DEBUG:root:  15:59:08 [Master] Received Message from worker 5: {'result': 'waiting'}
+DEBUG:root:  15:59:08 [Master] Received Message from worker 6: {'result': 'waiting'}
+DEBUG:root:  15:59:08 [Master] Received Message from worker 7: {'result': 'waiting'}
+DEBUG:root:  15:59:08 [Master] Received Message from worker 8: {'result': 'waiting'}
+DEBUG:root:  15:59:08 [Master] Received Message from worker 9: {'result': 'waiting'}
+DEBUG:root:  15:59:08 [Master] Sending worker 0 new map task
+DEBUG:root:  15:59:08 [Master] Sending worker 1 new map task
+DEBUG:root:  15:59:08 [Master] Sending worker 2 new map task
+DEBUG:root:  15:59:08 [Master] Sending worker 3 new map task
+DEBUG:root:  15:59:08 [Master] Sending worker 4 new map task
+DEBUG:root:  15:59:08 [Master] Receiving Acknowledgement from Worker 0
+DEBUG:root:  15:59:08 [Master] Receiving Acknowledgement from Worker 1
+DEBUG:root:  15:59:08 [Master] Receiving Acknowledgement from Worker 2
+DEBUG:root:  15:59:08 [Master] Receiving Acknowledgement from Worker 3
+DEBUG:root:  15:59:08 [Master] Receiving Acknowledgement from Worker 4
+DEBUG:root:  15:59:08 [Master] Receiving message from worker 5
+DEBUG:root:  15:59:08 [Master] Receiving message from worker 6
+DEBUG:root:  15:59:08 [Master] Receiving message from worker 7
+DEBUG:root:  15:59:08 [Master] Receiving message from worker 8
+DEBUG:root:  15:59:08 [Master] Receiving message from worker 9
+DEBUG:root:  15:59:08 [Master] Responding to Server
+DEBUG:root:  15:59:08 [Master] Waiting for work....
