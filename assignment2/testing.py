@@ -47,7 +47,18 @@ def expectedFailures():
     method = 'word-count'
     url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}book={book}"
     result = sendRequest(url)
-    assert {'error':'None is an invalid command'} == result, "Expects Error Return"
+    assert {'error':'invalid command formatting'} == result, "Expects Error Return"
+    # Correct Method + No Directory
+    method = 'inverted-index'
+    url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}"
+    result = sendRequest(url)
+    assert {'error':f'No directory provided'} == result, "Expects Error Return"
+    # Correct Method + Incorrect Directory
+    dir = 'notadir'
+    method = 'inverted-index'
+    url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}&directory={dir}"
+    result = sendRequest(url)
+    assert {'error':f'directory {dir} was not found'} == result, "Expects Error Return"
   
 def expectedPasses():
     # Empty Text File
@@ -86,10 +97,37 @@ def expectedPasses():
     url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}&book={book}"
     result = sendRequest(url)  
     assert result == {"result": {"hello": 5,"world": 5}}, "Expected 5 Hellos, 5 worlds"
+    # Empty Dir, no specifier
+    method = 'inverted-index'
+    dir = 'empty'
+    url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}&directory={dir}"
+    result = sendRequest(url)  
+    assert result == {"result": {}}, "Expected no result"
+    # Empty Dir + Specifier
+    method = 'inverted-index'
+    dir = 'empty'
+    specifier = 'kafka'
+    url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}&directory={dir}&specifier={specifier}"
+    result = sendRequest(url)  
+    assert result == {"result": {'kafka':[]}}, "Expected no results"
+    # Full Dir + Specifier
+    method = 'inverted-index'
+    dir = 'books2'
+    specifier = 'fox'
+    url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}&directory={dir}&specifier={specifier}"
+    result = sendRequest(url)  
+    assert len(result['result'][specifier]) == 2, "Expected 2 results"
+    # Full Dir + Specifier with no instances in files
+    method = 'inverted-index'
+    dir = 'books2'
+    specifier = 'foxdedededed'
+    url = f"http://{DATA['ip_address']}:{DATA['server']['server_port']}/?method={method}&directory={dir}&specifier={specifier}"
+    result = sendRequest(url)  
+    assert len(result['result'][specifier]) == 0, "Expected 0 results"
     
 if __name__ == '__main__':
     with open("config.json") as json_data_file:
         DATA = json.load(json_data_file)
-    expectedFailures()
+    # expectedFailures()
     expectedPasses()
     print("All Tests Pass")

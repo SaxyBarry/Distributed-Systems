@@ -1,15 +1,16 @@
 {
     "ip_address":"localhost",
+    "pythonCommand":"python3",
     "server":{
         "server_port":9623,
-        "master_zmq_port":"5434"
+        "master_zmq_port":5434
     },
     "master":{
-        "num_workers":2,
-        "num_mappers": 1,
-        "num_reducers":1
+        "num_workers":10,
+        "num_mappers": 5,
+        "num_reducers": 5
     },
     "workers":{
-        "worker_ports":[4010, 4020]
+        "worker_ports":[4010, 4020, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029]
     }
 }

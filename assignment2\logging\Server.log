@@ -19,3 +19,983 @@ DEBUG:root: 12:26:58 [ SERVER ] ---- Connecting to ZMQ server...
 DEBUG:root: 12:26:58 [ SERVER ] ---- Server started http://localhost:9623
 DEBUG:root: 12:27:50 [ SERVER ] ---- Connecting to ZMQ server...
 DEBUG:root: 12:27:50 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 18:48:56 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 18:48:56 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 18:49:59 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 18:49:59 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 18:51:02 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 18:51:02 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:07:18 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:07:18 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:07:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:07:51 [ SERVER ] ---- Method = ajs, Book = None
+ERROR:root: 19:07:51 [ SERVER ] ---- ajs IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 19:07:51 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:07:59 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:07:59 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 19:07:59 [ SERVER ] ---- None book provided
+DEBUG:root: 19:07:59 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:08:24 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:08:24 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:08:24 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:09:11 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:09:11 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:09:28 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:09:28 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:09:34 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:09:34 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:09:34 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:09:48 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:09:48 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:09:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:09:51 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:09:51 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:11:40 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:11:40 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:11:46 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:11:46 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:11:46 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:14:56 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:14:56 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:15:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:15:00 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:15:00 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:15:17 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:15:17 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:15:20 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:15:20 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:15:20 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:19:41 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:19:42 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:19:49 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:19:49 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:19:49 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:22:18 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:22:18 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:22:18 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:22:18 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:22:18 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:22:40 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:22:40 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:22:43 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:22:43 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:22:43 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:24:44 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:24:44 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:24:44 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:24:44 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:24:44 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:25:50 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:25:50 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:25:53 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:25:53 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:25:53 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:25:53 [ SERVER ] ---- Received reply
+DEBUG:root: 19:25:53 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:25:59 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:25:59 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:25:59 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:25:59 [ SERVER ] ---- Received reply
+DEBUG:root: 19:25:59 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:26:09 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:26:09 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:26:09 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:26:09 [ SERVER ] ---- Received reply
+DEBUG:root: 19:26:09 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:27:05 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:27:05 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:27:10 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:27:10 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:27:10 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:27:10 [ SERVER ] ---- Received reply
+DEBUG:root: 19:27:10 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:31:41 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:31:41 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:32:39 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:32:39 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:32:39 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:32:39 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:32:39 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:32:40 [ SERVER ] ---- Received reply
+DEBUG:root: 19:32:40 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:33:52 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:33:52 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:33:52 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:33:52 [ SERVER ] ---- Received reply
+DEBUG:root: 19:33:52 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:37:52 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:37:52 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:37:56 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:37:56 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:37:56 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:37:56 [ SERVER ] ---- Received reply
+DEBUG:root: 19:37:56 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:51:00 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:51:00 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:51:16 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:51:16 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:51:21 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:51:21 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:51:21 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:51:49 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:51:49 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:51:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:51:51 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:51:51 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:51:51 [ SERVER ] ---- Received reply
+DEBUG:root: 19:51:51 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:52:48 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:52:48 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:52:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:52:51 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:52:51 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:52:51 [ SERVER ] ---- Received reply
+DEBUG:root: 19:52:51 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:53:30 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:53:30 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:53:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:53:32 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:53:32 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:53:32 [ SERVER ] ---- Received reply
+DEBUG:root: 19:53:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:57:58 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:57:58 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 19:57:58 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:57:58 [ SERVER ] ---- Received reply
+ERROR:root: 19:57:58 [ SERVER ] ----  was not found
+DEBUG:root: 19:57:58 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:00 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 19:58:00 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:00 [ SERVER ] ---- Received reply
+ERROR:root: 19:58:00 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 19:58:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:02 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 19:58:02 [ SERVER ] ---- None book provided
+DEBUG:root: 19:58:02 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:04 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:04 [ SERVER ] ---- Method = None, Book = comma-test.txt
+ERROR:root: 19:58:04 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 19:58:04 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:06 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:06 [ SERVER ] ---- Method = notamethod, Book = comma-test.txt
+ERROR:root: 19:58:06 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 19:58:06 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:08 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:08 [ SERVER ] ---- Method = None, Book = None
+ERROR:root: 19:58:08 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 19:58:08 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:11 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:11 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 19:58:11 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:11 [ SERVER ] ---- Received reply
+DEBUG:root: 19:58:11 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:13 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:13 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 19:58:13 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:13 [ SERVER ] ---- Received reply
+DEBUG:root: 19:58:13 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:15 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:15 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 19:58:15 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:15 [ SERVER ] ---- Received reply
+DEBUG:root: 19:58:15 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:17 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:17 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 19:58:17 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:17 [ SERVER ] ---- Received reply
+DEBUG:root: 19:58:17 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:19 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:19 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 19:58:19 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:19 [ SERVER ] ---- Received reply
+DEBUG:root: 19:58:19 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:58:21 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:58:21 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 19:58:21 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:58:21 [ SERVER ] ---- Received reply
+DEBUG:root: 19:58:21 [ SERVER ] ---- Sending Response
+DEBUG:root: 19:59:27 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 19:59:27 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 19:59:30 [ SERVER ] ---- Received GET Request
+DEBUG:root: 19:59:30 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 19:59:30 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 19:59:30 [ SERVER ] ---- Received reply
+DEBUG:root: 19:59:30 [ SERVER ] ---- Sending Response
+DEBUG:root: 20:43:58 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 20:43:58 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 20:44:06 [ SERVER ] ---- Received GET Request
+DEBUG:root: 20:44:06 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 20:44:06 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 20:44:06 [ SERVER ] ---- Received reply
+DEBUG:root: 20:44:06 [ SERVER ] ---- Sending Response
+DEBUG:root: 20:44:29 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 20:44:29 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 20:44:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 20:44:32 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 20:44:32 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 20:44:32 [ SERVER ] ---- Received reply
+DEBUG:root: 20:44:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 21:02:58 [ SERVER ] ---- Received GET Request
+DEBUG:root: 21:02:58 [ SERVER ] ---- Method = word-count, Book = longer-war-and-peace.txt
+DEBUG:root: 21:02:58 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 21:03:37 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 21:03:37 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 21:03:38 [ SERVER ] ---- Received GET Request
+DEBUG:root: 21:03:38 [ SERVER ] ---- Method = word-count, Book = longer-war-and-peace.txt
+DEBUG:root: 21:03:38 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 13:11:08 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:11:08 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:11:44 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:11:44 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:11:52 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:11:52 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:11:52 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:40:45 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:40:45 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:40:49 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:40:49 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:40:49 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:40:49 [ SERVER ] ---- Received reply
+DEBUG:root: 13:40:49 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:41:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:41:32 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:41:32 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:41:32 [ SERVER ] ---- Received reply
+DEBUG:root: 13:41:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:41:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:41:32 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:41:32 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:41:32 [ SERVER ] ---- Received reply
+DEBUG:root: 13:41:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:41:57 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:41:57 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:42:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:42:00 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:42:00 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:42:00 [ SERVER ] ---- Received reply
+DEBUG:root: 13:42:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:43:05 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:43:05 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:43:09 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:43:09 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:43:09 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:43:09 [ SERVER ] ---- Received reply
+DEBUG:root: 13:43:09 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:44:11 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:44:11 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:44:16 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:44:16 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:44:16 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:44:16 [ SERVER ] ---- Received reply
+DEBUG:root: 13:44:16 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:45:50 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:45:50 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:45:52 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:45:52 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:45:52 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:45:52 [ SERVER ] ---- Received reply
+DEBUG:root: 13:45:52 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:47:00 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:47:00 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:47:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:47:02 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:47:02 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:47:02 [ SERVER ] ---- Received reply
+DEBUG:root: 13:47:02 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:47:34 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:47:34 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:47:36 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:47:36 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:47:36 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:47:36 [ SERVER ] ---- Received reply
+DEBUG:root: 13:47:36 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:49:52 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:49:53 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:49:54 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:49:54 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:49:54 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:49:54 [ SERVER ] ---- Received reply
+DEBUG:root: 13:49:54 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:50:29 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:50:29 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:50:31 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:50:31 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:50:31 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:50:31 [ SERVER ] ---- Received reply
+DEBUG:root: 13:50:31 [ SERVER ] ---- Sending Response
+DEBUG:root: 13:51:21 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 13:51:21 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 13:51:23 [ SERVER ] ---- Received GET Request
+DEBUG:root: 13:51:23 [ SERVER ] ---- Method = inverted-index, Book = None
+DEBUG:root: 13:51:23 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 13:51:32 [ SERVER ] ---- Received reply
+DEBUG:root: 13:51:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:14:10 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:14:10 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:14:13 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:14:14 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:14:14 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:14:15 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:14:20 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:14:20 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:14:50 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:15:24 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:15:24 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:15:28 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:15:43 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:15:43 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:15:45 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:15:45 [ SERVER ] ---- Method = inverted-index, Directory = None
+DEBUG:root: 14:15:45 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:15:57 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:15:57 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:15:57 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:16:40 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:16:40 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:16:41 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:16:41 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:16:41 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:16:41 [ SERVER ] ---- Received reply
+DEBUG:root: 14:16:41 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:16:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:16:51 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 14:16:51 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:16:59 [ SERVER ] ---- Received reply
+DEBUG:root: 14:16:59 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:24:38 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:24:38 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:24:57 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:24:57 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:25:01 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:01 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 14:25:01 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:10 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:10 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:25:12 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:12 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:25:12 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:12 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:12 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:12 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:25:12 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:12 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:12 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:12 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:25:12 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:12 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:13 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:13 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:25:13 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:13 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:13 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:13 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:25:13 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:13 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:19 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:25:19 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:25:19 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:25:19 [ SERVER ] ---- Received reply
+DEBUG:root: 14:25:36 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:25:36 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:28:08 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:28:08 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:28:14 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:28:14 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:28:14 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:28:14 [ SERVER ] ---- Received reply
+ERROR:root: 14:28:14 [ SERVER ] ---- book was not found
+DEBUG:root: 14:28:14 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:28:36 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:28:36 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:28:37 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:28:37 [ SERVER ] ---- Method = inverted-index, Directory = book
+DEBUG:root: 14:28:37 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:28:38 [ SERVER ] ---- Received reply
+ERROR:root: 14:28:38 [ SERVER ] ---- book was not found
+DEBUG:root: 14:28:38 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:28:50 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:28:50 [ SERVER ] ---- Method = inverted-index, Directory = None
+DEBUG:root: 14:28:50 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:28:56 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:28:56 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 14:28:56 [ SERVER ] ---- None book provided
+DEBUG:root: 14:28:56 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:29:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:29:00 [ SERVER ] ---- Method = word-count, Book = metamorphosis.txt
+DEBUG:root: 14:29:00 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 14:29:00 [ SERVER ] ---- Received reply
+DEBUG:root: 14:29:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:29:05 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:29:05 [ SERVER ] ---- Method = inverted-index, Directory = None
+DEBUG:root: 14:29:05 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:29:15 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:29:15 [ SERVER ] ---- Method = inverted-index, Directory = bookl
+DEBUG:root: 14:29:15 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:29:15 [ SERVER ] ---- Received reply
+ERROR:root: 14:29:15 [ SERVER ] ---- bookl was not found
+DEBUG:root: 14:29:15 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:29:21 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:29:21 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:29:21 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:29:21 [ SERVER ] ---- Received reply
+DEBUG:root: 14:29:21 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:30:15 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:30:15 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 14:30:15 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:30:25 [ SERVER ] ---- Received reply
+DEBUG:root: 14:30:25 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:31:35 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:31:35 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 14:31:35 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:31:51 [ SERVER ] ---- Received reply
+DEBUG:root: 14:31:51 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:31:56 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:31:56 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 14:31:56 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:32:06 [ SERVER ] ---- Received reply
+DEBUG:root: 14:32:06 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:32:48 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:32:48 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:32:48 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:32:48 [ SERVER ] ---- Received reply
+DEBUG:root: 14:32:48 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:33:51 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:33:51 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:33:51 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:33:51 [ SERVER ] ---- Received reply
+DEBUG:root: 14:33:51 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:34:57 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:34:57 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:35:01 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:35:01 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:35:01 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:35:01 [ SERVER ] ---- Received reply
+DEBUG:root: 14:35:01 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:35:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:35:02 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:35:02 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:35:02 [ SERVER ] ---- Received reply
+DEBUG:root: 14:35:02 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:35:03 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:35:03 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:35:03 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:35:03 [ SERVER ] ---- Received reply
+DEBUG:root: 14:35:03 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:38:30 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:38:30 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:38:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:38:32 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:38:32 [ SERVER ] ---- Sending request inverted index...
+DEBUG:root: 14:38:32 [ SERVER ] ---- Received reply
+DEBUG:root: 14:38:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:43:53 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 14:43:54 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 14:43:57 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:43:57 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:43:57 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}...
+DEBUG:root: 14:43:57 [ SERVER ] ---- Received reply
+DEBUG:root: 14:43:57 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:45:03 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:45:03 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 14:45:03 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'foxahu'}...
+DEBUG:root: 14:45:03 [ SERVER ] ---- Received reply
+DEBUG:root: 14:45:03 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:45:12 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:45:12 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 14:45:12 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books', 'specifier': 'kafka'}...
+DEBUG:root: 14:45:21 [ SERVER ] ---- Received reply
+DEBUG:root: 14:45:21 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:53:56 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:53:56 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 14:53:56 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 14:53:56 [ SERVER ] ---- Received reply
+DEBUG:root: 14:53:56 [ SERVER ] ---- Sending Response
+DEBUG:root: 14:54:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 14:54:00 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 14:54:00 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': None}...
+DEBUG:root: 14:54:00 [ SERVER ] ---- Received reply
+DEBUG:root: 14:54:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:14:38 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:14:38 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:14:41 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:14:41 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:16:54 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:16:55 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:16:57 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:16:57 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:16:57 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:16:57 [ SERVER ] ---- Received reply
+ERROR:root: 15:16:57 [ SERVER ] ----  was not found
+DEBUG:root: 15:16:57 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:16:59 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:16:59 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:16:59 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:16:59 [ SERVER ] ---- Received reply
+ERROR:root: 15:16:59 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:16:59 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:17:01 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:17:01 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:17:01 [ SERVER ] ---- None book provided
+DEBUG:root: 15:17:01 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:17:03 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:17:03 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:17:03 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:17:05 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:17:05 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:17:05 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:17:07 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:17:27 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:17:27 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:17:57 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:17:57 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:17:57 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:17:57 [ SERVER ] ---- Received reply
+ERROR:root: 15:17:57 [ SERVER ] ----  was not found
+DEBUG:root: 15:17:57 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:17:59 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:17:59 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:17:59 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:17:59 [ SERVER ] ---- Received reply
+ERROR:root: 15:17:59 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:17:59 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:18:01 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:18:01 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:18:01 [ SERVER ] ---- None book provided
+DEBUG:root: 15:18:01 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:18:03 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:18:03 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:18:03 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:18:05 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:18:05 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:18:05 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:18:07 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:19:06 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:19:06 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:19:06 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:19:06 [ SERVER ] ---- Received reply
+ERROR:root: 15:19:06 [ SERVER ] ----  was not found
+DEBUG:root: 15:19:06 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:19:08 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:19:08 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:19:08 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:19:08 [ SERVER ] ---- Received reply
+ERROR:root: 15:19:08 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:19:08 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:19:10 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:19:10 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:19:10 [ SERVER ] ---- None book provided
+DEBUG:root: 15:19:10 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:19:12 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:19:12 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:19:12 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:19:14 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:19:14 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:19:14 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:19:16 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:20:27 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:20:27 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:20:38 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:20:38 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:20:38 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:20:38 [ SERVER ] ---- Received reply
+ERROR:root: 15:20:38 [ SERVER ] ----  was not found
+DEBUG:root: 15:20:38 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:20:40 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:20:40 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:20:40 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:20:40 [ SERVER ] ---- Received reply
+ERROR:root: 15:20:40 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:20:40 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:20:42 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:20:42 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:20:42 [ SERVER ] ---- None book provided
+DEBUG:root: 15:20:42 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:20:44 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:20:44 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:20:44 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:20:46 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:20:46 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:20:46 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:20:48 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:22:05 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:22:05 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:22:33 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:22:33 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:22:33 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:22:33 [ SERVER ] ---- Received reply
+ERROR:root: 15:22:33 [ SERVER ] ----  was not found
+DEBUG:root: 15:22:33 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:22:36 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:22:36 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:22:36 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:22:36 [ SERVER ] ---- Received reply
+ERROR:root: 15:22:36 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:22:36 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:22:38 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:22:38 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:22:38 [ SERVER ] ---- None book provided
+DEBUG:root: 15:22:38 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:22:41 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:22:41 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:22:41 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:22:43 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:22:43 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:22:43 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:22:45 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:22:45 [ SERVER ] ---- /?method=word-countbook=comma-test.txt IS INCORRECTLY FORMATED
+Traceback (most recent call last):
+  File "c:\Users\saxyb\Desktop\IU\4-Senior Year (2022-2023)\Semester 2\CSCI-P 434\homework\assignment2\webserver.py", line 23, in do_GET
+    query_components = dict(qc.split("=") for qc in query.split("&"))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+DEBUG:root: 15:22:45 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:23 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:23 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:24:23 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:23 [ SERVER ] ---- Received reply
+ERROR:root: 15:24:23 [ SERVER ] ----  was not found
+DEBUG:root: 15:24:23 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:25 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:25 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:24:25 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:25 [ SERVER ] ---- Received reply
+ERROR:root: 15:24:25 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:24:25 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:27 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:27 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:24:27 [ SERVER ] ---- None book provided
+DEBUG:root: 15:24:27 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:29 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:24:29 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:24:29 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:31 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:24:31 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:24:31 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:33 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:24:33 [ SERVER ] ---- /?method=word-countbook=comma-test.txt IS INCORRECTLY FORMATED
+Traceback (most recent call last):
+  File "c:\Users\saxyb\Desktop\IU\4-Senior Year (2022-2023)\Semester 2\CSCI-P 434\homework\assignment2\webserver.py", line 23, in do_GET
+    query_components = dict(qc.split("=") for qc in query.split("&"))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+DEBUG:root: 15:24:33 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:36 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:36 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:24:36 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:36 [ SERVER ] ---- Received reply
+DEBUG:root: 15:24:36 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:38 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:38 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:24:38 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:38 [ SERVER ] ---- Received reply
+DEBUG:root: 15:24:38 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:40 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:40 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 15:24:40 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:40 [ SERVER ] ---- Received reply
+DEBUG:root: 15:24:40 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:42 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:42 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 15:24:42 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:42 [ SERVER ] ---- Received reply
+DEBUG:root: 15:24:42 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:44 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:44 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:24:44 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:44 [ SERVER ] ---- Received reply
+DEBUG:root: 15:24:44 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:24:46 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:24:46 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:24:46 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:24:46 [ SERVER ] ---- Received reply
+DEBUG:root: 15:24:46 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:01 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:01 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:31:01 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:01 [ SERVER ] ---- Received reply
+ERROR:root: 15:31:01 [ SERVER ] ----  was not found
+DEBUG:root: 15:31:01 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:03 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:03 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:31:03 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:03 [ SERVER ] ---- Received reply
+ERROR:root: 15:31:03 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:31:03 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:06 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:06 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:31:06 [ SERVER ] ---- None book provided
+DEBUG:root: 15:31:06 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:08 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:31:08 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:31:08 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:10 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:31:10 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:31:10 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:12 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:31:12 [ SERVER ] ---- /?method=word-countbook=comma-test.txt IS INCORRECTLY FORMATED
+Traceback (most recent call last):
+  File "c:\Users\saxyb\Desktop\IU\4-Senior Year (2022-2023)\Semester 2\CSCI-P 434\homework\assignment2\webserver.py", line 23, in do_GET
+    query_components = dict(qc.split("=") for qc in query.split("&"))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+DEBUG:root: 15:31:12 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:14 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:14 [ SERVER ] ---- Method = inverted-index, Directory = None
+DEBUG:root: 15:31:14 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:16 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:16 [ SERVER ] ---- Method = inverted-index, Directory = notadir
+DEBUG:root: 15:31:16 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'notadir', 'specifier': None}...
+DEBUG:root: 15:31:16 [ SERVER ] ---- Received reply
+ERROR:root: 15:31:16 [ SERVER ] ---- notadir was not found
+DEBUG:root: 15:31:16 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:18 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:18 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:31:18 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:18 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:18 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:20 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:20 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:31:20 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:20 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:20 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:22 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:22 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 15:31:22 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:22 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:22 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:24 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:24 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 15:31:24 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:24 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:24 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:26 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:26 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:31:26 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:26 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:26 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:28 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:28 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:31:28 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:31:28 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:28 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:30 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:30 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:31:30 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': None}...
+DEBUG:root: 15:31:30 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:30 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:31:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:31:32 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:31:32 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 15:31:32 [ SERVER ] ---- Received reply
+DEBUG:root: 15:31:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:32:09 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:32:09 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:32:09 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 15:32:09 [ SERVER ] ---- Received reply
+DEBUG:root: 15:32:09 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:02 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:33:02 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:33:07 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:07 [ SERVER ] ---- Method = word-count, Book = 
+DEBUG:root: 15:33:07 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:07 [ SERVER ] ---- Received reply
+ERROR:root: 15:33:07 [ SERVER ] ----  was not found
+DEBUG:root: 15:33:07 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:09 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:09 [ SERVER ] ---- Method = word-count, Book = thisdoesnotexist
+DEBUG:root: 15:33:09 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:09 [ SERVER ] ---- Received reply
+ERROR:root: 15:33:09 [ SERVER ] ---- thisdoesnotexist was not found
+DEBUG:root: 15:33:09 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:11 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:11 [ SERVER ] ---- Method = word-count, Book = None
+ERROR:root: 15:33:11 [ SERVER ] ---- None book provided
+DEBUG:root: 15:33:11 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:13 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:33:13 [ SERVER ] ---- None IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:33:13 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:15 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:33:15 [ SERVER ] ---- notamethod IS AN INVALID COMMAND
+NoneType: None
+DEBUG:root: 15:33:15 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:17 [ SERVER ] ---- Received GET Request
+ERROR:root: 15:33:17 [ SERVER ] ---- /?method=word-countbook=comma-test.txt IS INCORRECTLY FORMATED
+Traceback (most recent call last):
+  File "c:\Users\saxyb\Desktop\IU\4-Senior Year (2022-2023)\Semester 2\CSCI-P 434\homework\assignment2\webserver.py", line 23, in do_GET
+    query_components = dict(qc.split("=") for qc in query.split("&"))
+ValueError: dictionary update sequence element #0 has length 3; 2 is required
+DEBUG:root: 15:33:17 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:19 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:19 [ SERVER ] ---- Method = inverted-index, Directory = None
+DEBUG:root: 15:33:19 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:21 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:21 [ SERVER ] ---- Method = inverted-index, Directory = notadir
+DEBUG:root: 15:33:21 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'notadir', 'specifier': None}...
+DEBUG:root: 15:33:21 [ SERVER ] ---- Received reply
+ERROR:root: 15:33:21 [ SERVER ] ---- notadir was not found
+DEBUG:root: 15:33:21 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:23 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:23 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:33:23 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:23 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:23 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:25 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:25 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:33:25 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:25 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:25 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:27 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:27 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 15:33:27 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:28 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:28 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:30 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:30 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 15:33:30 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:30 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:30 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:32 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:32 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:33:32 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:32 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:32 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:34 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:34 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:33:34 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:33:34 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:34 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:36 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:36 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:33:36 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': None}...
+DEBUG:root: 15:33:36 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:36 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:33:38 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:33:38 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:33:38 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 15:33:38 [ SERVER ] ---- Received reply
+DEBUG:root: 15:33:38 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:12 [ SERVER ] ---- Connecting to ZMQ server...
+DEBUG:root: 15:36:12 [ SERVER ] ---- Server started http://localhost:9623
+DEBUG:root: 15:36:16 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:16 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:36:16 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:36:16 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:16 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:18 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:18 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:36:18 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:36:18 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:18 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:20 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:20 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 15:36:20 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:36:20 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:20 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:22 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:22 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 15:36:22 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:36:22 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:22 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:24 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:24 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:36:24 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:36:24 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:24 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:26 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:26 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:36:26 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:36:26 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:26 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:28 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:28 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:36:28 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': None}...
+DEBUG:root: 15:36:28 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:28 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:30 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:30 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:36:30 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 15:36:30 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:30 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:33 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:33 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 15:36:33 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}...
+DEBUG:root: 15:36:33 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:33 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:43 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:43 [ SERVER ] ---- Method = inverted-index, Directory = books
+DEBUG:root: 15:36:43 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books', 'specifier': 'kafka'}...
+DEBUG:root: 15:36:53 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:53 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:36:53 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:36:53 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 15:36:53 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}...
+DEBUG:root: 15:36:53 [ SERVER ] ---- Received reply
+DEBUG:root: 15:36:53 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:00 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:00 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:38:00 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:38:00 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:00 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:02 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:02 [ SERVER ] ---- Method = word-count, Book = empty-test.txt
+DEBUG:root: 15:38:02 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:38:02 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:02 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:04 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:04 [ SERVER ] ---- Method = word-count, Book = comma-test.txt
+DEBUG:root: 15:38:04 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:38:04 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:04 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:06 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:06 [ SERVER ] ---- Method = word-count, Book = single-test.txt
+DEBUG:root: 15:38:06 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:38:06 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:06 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:08 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:08 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:38:08 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:38:08 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:08 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:10 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:10 [ SERVER ] ---- Method = word-count, Book = two-word-test.txt
+DEBUG:root: 15:38:10 [ SERVER ] ---- Sending request word count...
+DEBUG:root: 15:38:10 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:10 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:13 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:13 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:38:13 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': None}...
+DEBUG:root: 15:38:13 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:13 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:15 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:15 [ SERVER ] ---- Method = inverted-index, Directory = empty
+DEBUG:root: 15:38:15 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'empty', 'specifier': 'kafka'}...
+DEBUG:root: 15:38:15 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:15 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:17 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:17 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 15:38:17 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'fox'}...
+DEBUG:root: 15:38:17 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:17 [ SERVER ] ---- Sending Response
+DEBUG:root: 15:38:19 [ SERVER ] ---- Received GET Request
+DEBUG:root: 15:38:19 [ SERVER ] ---- Method = inverted-index, Directory = books2
+DEBUG:root: 15:38:19 [ SERVER ] ---- Sending request {'method': 'inverted index', 'directory': 'books2', 'specifier': 'foxdedededed'}...
+DEBUG:root: 15:38:19 [ SERVER ] ---- Received reply
+DEBUG:root: 15:38:19 [ SERVER ] ---- Sending Response
