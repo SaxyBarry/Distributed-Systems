@@ -67,9 +67,9 @@ class Server(BaseHTTPRequestHandler):
     
     # Handles comms with the Master node for the word counter request
     def wordCounter(self, bookPath, specifier):
-        request = "word count"
+        request = {"method":"word count", "book": str(bookPath), "specifier":specifier}
         logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Sending request {request}...")
-        socket.send_json({"method":"word count", "book": str(bookPath), "specifier":specifier})
+        socket.send_json(request)
         #  Get the reply
         message = socket.recv_json()
         logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Received reply")

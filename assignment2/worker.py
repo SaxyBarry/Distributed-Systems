@@ -68,9 +68,7 @@ def wcreducer():
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] is perfomring reduce")
     output = mapreduce.wordCountReduce(task)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] reduce complete")
-    # Waiting for master to be ready to receieve response
-    message = mySocket.recv_json()
-    mySocket.send_json(output)
+    masterReceive.send_json(output)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] output sent back to master")
 
 def indexMapper(tasks, hashMod):
@@ -122,9 +120,7 @@ def indexReducer():
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] is perfomring reduce")
     output = mapreduce.reduceIndex(task)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] reduce complete")
-    # Waiting for master to be ready to receieve response
-    message = mySocket.recv_json()
-    mySocket.send_json(output)
+    masterReceive.send_json(output)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] output sent back to master")
 
 ###############################################################################################################################
@@ -143,6 +139,8 @@ portNumber = sys.argv[1]
 logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] Creating ZMQ Connection")
 context = zmq.Context()
 mySocket = context.socket(zmq.REP)
-mySocket.bind(f"tcp://*:"+portNumber)
+mySocket.bind(f"tcp://*:{portNumber}")
+masterReceive = context.socket(zmq.PUSH)
+masterReceive.connect(f"tcp://{DATA['ip_address']}:{DATA['master']['master_receive_port']}")
 
 awaitWork()

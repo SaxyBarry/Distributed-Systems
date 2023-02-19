@@ -69,8 +69,7 @@ def wordCount(book, specifier):
             # Receive Worker Acknowledgement
             for x in reducers.keys():
                 logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Receiving message from worker {x}")
-                reducers[x]['socket'].send_json({})
-                reduceResult[x] = reducers[x]['socket'].recv_json()
+                reduceResult[x] = receiving.recv_json()
             if specifier != None:
                 response = {specifier:0}
                 for x in reducers.keys():
@@ -123,8 +122,7 @@ def invertedIndex(directory, specifier):
         # Receive Worker Acknowledgement
         for x in reducers.keys():
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Receiving message from worker {x}")
-            reducers[x]['socket'].send_json({})
-            reduceResult[x] = reducers[x]['socket'].recv_json()
+            reduceResult[x] = receiving.recv_json()
         if specifier != None:
             response = {specifier:[]}
             for x in reducers.keys():
@@ -164,6 +162,8 @@ logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Establi
 context = zmq.Context()
 frontend = context.socket(zmq.REP)
 frontend.bind(f"tcp://*:{DATA['server']['master_zmq_port']}")
+receiving = context.socket(zmq.PULL)
+receiving.bind(f"tcp://*:{DATA['master']['master_receive_port']}")
 
 mappers, reducers = establishWorkers()
 awaitWork()

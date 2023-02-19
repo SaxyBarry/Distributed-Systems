@@ -128,6 +128,6 @@ def expectedPasses():
 if __name__ == '__main__':
     with open("config.json") as json_data_file:
         DATA = json.load(json_data_file)
-    # expectedFailures()
+    expectedFailures()
     expectedPasses()
     print("All Tests Pass")
