@@ -21,6 +21,7 @@ def doWork(message) -> None:
         indexMapper(tasks, message["hashMod"])
     elif method == "reduce inverted index":
         indexReducer()
+    # After all work is completed, wait for next job
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] is done working....")
     awaitWork()
     
@@ -65,9 +66,11 @@ def wcreducer():
         mySocket.send_json({'received message':1})
         logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] Receiving message {x} ")
         x += 1
+    # Reducing
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] is perfomring reduce")
     output = mapreduce.wordCountReduce(task)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] reduce complete")
+    # Returning the results to the master node 
     masterReceive.send_json(output)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] output sent back to master")
 
@@ -107,19 +110,23 @@ def indexMapper(tasks, hashMod):
         socket.recv_json()
     mySocket.send_json({"work":"complete"})
 
+# Handles reducing for inverted index
 def indexReducer():
     mySocket.send_json({"result":"waiting"})
     # Wait for every mapper to complete their task
     x = 0
     task = {}
+    # Receiving all data from the mappers
     while x < DATA['master']['num_mappers']:
         task[x] = mySocket.recv_json()
         mySocket.send_json({'received message':1})
         logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] Receiving message {x} ")
         x += 1
+    # Performing Reduce
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] is perfomring reduce")
     output = mapreduce.reduceIndex(task)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] reduce complete")
+    # Sending result to the master
     masterReceive.send_json(output)
     logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] output sent back to master")
 
@@ -136,11 +143,16 @@ logging.basicConfig(filename=SOURCE_DIR+f'/logging/worker-{sys.argv[1]}.log', le
 
 # Attempting to establish connection in ZMQ with Master node
 portNumber = sys.argv[1]
+
+# Connecting to personal port
 logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Worker] Creating ZMQ Connection")
 context = zmq.Context()
 mySocket = context.socket(zmq.REP)
 mySocket.bind(f"tcp://*:{portNumber}")
+
+# Connecting to the master node's receiver for results
 masterReceive = context.socket(zmq.PUSH)
 masterReceive.connect(f"tcp://{DATA['ip_address']}:{DATA['master']['master_receive_port']}")
 
+# Ready for work
 awaitWork()

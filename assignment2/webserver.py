@@ -39,12 +39,16 @@ class Server(BaseHTTPRequestHandler):
                     else:
                         logging.error(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- None book provided")
                         response_data = {'error':f'No book provided'}
+                # Inverted Index Handler
                 elif method == "inverted-index":
+                    # Ensuring a directory was given
                     directory = query_components.get("directory", None)
                     logging.debug(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- Method = {method}, Directory = {directory}")
                     if directory != None:
+                        # Setting Default for Specifier
                         specifier = query_components.get("specifier", None)
                         data = self.invertedIndex(directory, specifier)
+                        # Return response
                         response_data = {'result':data}
                         if data == {'error':f'{directory} was not found'}:
                             logging.error(f" {time.strftime('%H:%M:%S', time.localtime())} [ SERVER ] ---- {directory} was not found")

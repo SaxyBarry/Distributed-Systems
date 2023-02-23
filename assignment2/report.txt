@@ -70,9 +70,8 @@ Uses ZeroMQ utilizing JSON structure to communicate between nodes and the API ov
     7. Reducers receive the information 
     8. Reducers respond to the mappers saying they have received the information
     9. Once Reducers have received results = # of Mappers, they perform the reducing
-    10. The master node establishes one last connection with the reducers to receive the information
-    11. The reducer sends the completed results to the master node
-    12. The master gathers this data from all of the reducers and performs last minute specifier calculations 
+    10. The reducer sends the completed results to the master node
+    11. The master gathers this data from all of the reducers and performs last minute specifier calculations 
     --------------Inverted Index----------------
     1. Master Node accesses given directory
     2. Master Node partitions based on the number of files and number of mappers
@@ -83,9 +82,8 @@ Uses ZeroMQ utilizing JSON structure to communicate between nodes and the API ov
     7. Reducers receive the information 
     8. Reducers respond to the mappers saying they have received the information
     9. Once Reducers have received results = # of Mappers, they perform the reducing
-    10. The master node establishes one last connection with the reducers to receive the information
-    11. The reducer sends the completed results to the master node
-    12. The master gathers this data from all of the reducers and performs last minute specifier calculations 
+    10. The reducer sends the completed results to the master node
+    11. The master gathers this data from all of the reducers and performs last minute specifier calculations 
 12. The master node sends it's reply back to the API over ZeroMQ
 13. The API formats the response in JSON structure and responds to the requestor
 
@@ -128,5 +126,5 @@ Inverted Index:
 [x] Word Count
 [x] Inverted Index
 [x] Testing
-[ ] Scripts to run
-[ ] Report
+[x] Scripts to run
+[x] Report

@@ -89,11 +89,11 @@ def invertedIndex(directory, specifier):
   # Step 1. Get all of books in the given directory 
     files = []
     # Iterate directory
-    if os.path.isdir(f'{SOURCE_DIR}\\{directory}\\'):
-        for path in os.listdir(f'{SOURCE_DIR}\\{directory}\\'):
+    if os.path.isdir(f'{SOURCE_DIR}/{directory}/'):
+        for path in os.listdir(f'{SOURCE_DIR}/{directory}/'):
             # check if current path is a file
-            if os.path.isfile(os.path.join(f'{SOURCE_DIR}\\{directory}\\', path)):
-                files.append(os.path.join(f'{SOURCE_DIR}\\{directory}\\', path))
+            if os.path.isfile(os.path.join(f'{SOURCE_DIR}/{directory}/', path)):
+                files.append(os.path.join(f'{SOURCE_DIR}/{directory}/', path))
         
         # Step 2. Tell reducers to prepare to receive data
         for x in reducers.keys():
@@ -102,6 +102,7 @@ def invertedIndex(directory, specifier):
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Received Message from worker {x}: {message}")
             
         # Step 3. Divide mapping work between mappers 
+        # Here we divide the number of files by the number of mappers in the given directory
         partition = math.ceil(len(files) / DATA['master']['num_mappers'])
         for x in mappers.keys():
             books = []
@@ -123,6 +124,7 @@ def invertedIndex(directory, specifier):
         for x in reducers.keys():
             logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Receiving message from worker {x}")
             reduceResult[x] = receiving.recv_json()
+        # If there is a specifier, filter the results by the given specifier
         if specifier != None:
             response = {specifier:[]}
             for x in reducers.keys():
@@ -162,8 +164,12 @@ logging.debug(f"  {time.strftime('%H:%M:%S', time.localtime())} [Master] Establi
 context = zmq.Context()
 frontend = context.socket(zmq.REP)
 frontend.bind(f"tcp://*:{DATA['server']['master_zmq_port']}")
+# Node to receive results
 receiving = context.socket(zmq.PULL)
 receiving.bind(f"tcp://*:{DATA['master']['master_receive_port']}")
 
+# Creating Mappers and reducers
 mappers, reducers = establishWorkers()
+
+# Ready to work
 awaitWork()
